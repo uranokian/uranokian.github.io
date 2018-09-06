@@ -1,0 +1,130 @@
+/*
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+// Mode: Phone
+@phone: ~"(max-width: 575.98px)";
+@landscapePhones: ~"(min-width: 576px) and (max-width: 767.98px) ";
+@tablet: ~"(min-width: 768px) and (max-width: 991.98px)";
+
+
+@media @phone, @landscapePhones, @tablet {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .photo {
+      .image-wrapper {
+        .image {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+    .menu{
+      margin-top: 4rem;
+    }
+    .social {
+      position: relative;
+    }
+  }
+  .main-wrapper {
+    margin-left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .about-me-section__button {
+      display: none;
+    }
+    .sections {
+      height: auto;
+      padding: 0;
+      &__headers {
+        font-size: 12vw;
+      }
+    }
+    .about-me-section__text {
+      padding: 2rem;
+    }
+
+    .examples-section{
+      .figureOdd, .figureEven {
+        position: relative;
+        max-width: 95vw;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 1rem;
+        .number-for-figureEven, .number-for-figureOdd {
+          display: none;
+        }
+      }
+      &__image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .skills-block {
+      .skills-logo {
+        flex-basis: 100%;
+      }
+    }
+}
+}
+
+@media @landscapePhones, @phone {
+
+.sidebar {
+  .menu-wrapper {
+    display: none;
+    transition: 1s;
+  }
+
+  .phone-menu-button {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #974d26;
+    border: 3px solid black;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    .fas {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 2rem;
+    }
+  }
+
+  .phone-menu {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: #5a8a8a;
+    transition: 1s;
+  }
+  .open-close {
+    display: block;
+  }
+}
+}

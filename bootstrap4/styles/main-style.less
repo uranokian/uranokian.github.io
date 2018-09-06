@@ -1,0 +1,39 @@
+.main-wrapper {
+  .item {
+    &__image {
+      filter: grayscale(1);
+      transition: 0.5s linear;
+    }
+    &__image:hover {
+      filter: grayscale(0);
+      cursor: pointer;
+    }
+    &__information{
+      padding: 0.5rem;
+      top: 0;
+    }
+    &__title {
+      color: black;
+      font-weight: bold;
+    }
+    &__price {
+      color: #dc3545;
+    }
+  }
+}
+
+.cards-section {
+  &__picture {
+    font-size: 3rem;
+    color: #cc5353;
+  }
+  &__title {
+    color: #662626;
+  }
+  &__text {
+    font-family: 'Comfortaa', sans-serif;
+    color: #767676;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+  }
+}
