@@ -21,7 +21,6 @@ class SubGalerries {
     constructor(subGallery) {
         this.subGalleries = $(subGallery);
         this.hiddenImages = this.subGalleries.find('.hide-images');
-        this.hideImages();
         this.arrHideImages = this.hiddenImages.find('.gallerys__images-hide');
         this.startImage = $(this.subGalleries).find('.gallerys__images');
         this.arrForSrc = [];
@@ -32,9 +31,6 @@ class SubGalerries {
         this.previousButSettings();
     }
 
-    hideImages() {
-      this.hiddenImages.css('display', 'none');
-    }
 
     settings() {
       $(this.arrHideImages).each((i, e) => {

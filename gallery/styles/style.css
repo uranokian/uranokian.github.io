@@ -133,6 +133,9 @@ body {
     font-weight: bold;
   }
 }
+.hide-images {
+  display: none;
+}
 .highlight {
   background-color: #135c27;
 }
