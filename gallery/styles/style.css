@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#8bb0ba, #e3e1e1) no-repeat;
+  background-size: contain;
+}
+.gallery-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 1rem;
+}
+.header {
+  padding-top: 1rem;
+  text-align: center;
+}
+.header__title {
+  padding-top: 1rem;
+  color: #001a1c;
+}
+.header__title .big-letter {
+  display: inline-block;
+  padding: 1rem;
+  font-weight: 600;
+  border: 4px solid #135c27;
+}
+.gallery-navigation {
+  padding-top: 1rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.gallery-navigation__buttons {
+  width: 30%;
+  display: flex;
+  font-size: 1.5rem;
+  background: #e3e1e1;
+}
+@media (max-width: 576px) {
+  .gallery-navigation__buttons {
+    font-size: 4.5vw;
+    font-weight: bold;
+  }
+}
+.gallery-navigation__links {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: 0.2s linear;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.48);
+  color: #001a1c;
+}
+.gallery-navigation__links:hover {
+  cursor: pointer;
+  background: #78a85d;
+  color: white;
+}
+.gallerys {
+  position: relative;
+  padding-top: 1rem;
+}
+.gallerys__title {
+  padding: 1rem;
+}
+@media (max-width: 576px) {
+  .gallerys__title {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+}
+.gallerys__images {
+  width: 100%;
+  max-height: 600px;
+  display: block;
+  border: 4px solid white;
+}
+.gallerys__buttons {
+  cursor: pointer;
+  color: #78a85d;
+  position: absolute;
+  top: 50%;
+  transition: 0.2s linear;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+@media (max-width: 576px) {
+  .gallerys__buttons {
+    top: 40%;
+  }
+}
+.gallerys__buttons:hover {
+  color: white;
+}
+.gallerys__buttons:active {
+  color: black;
+}
+.gallerys .next-button {
+  top: 50%;
+  right: 7px;
+}
+@media (max-width: 576px) {
+  .gallerys .next-button {
+    top: 40%;
+  }
+}
+.gallerys .next-button .far {
+  font-size: 3rem;
+}
+@media (max-width: 576px) {
+  .gallerys .next-button .far {
+    font-size: 7vw;
+    font-weight: bold;
+  }
+}
+.gallerys .previous-button {
+  left: 7px;
+}
+.gallerys .previous-button .far {
+  font-size: 3rem;
+}
+@media (max-width: 576px) {
+  .gallerys .previous-button .far {
+    font-size: 7vw;
+    font-weight: bold;
+  }
+}
+.highlight {
+  background-color: #135c27;
+}
+.highlight .gallery-navigation__links {
+  color: white;
+}

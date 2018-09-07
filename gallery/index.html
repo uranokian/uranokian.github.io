@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title"><span class="big-letter">G</span>allery</h1>
+    <h2 class="header__title">Neque quis massa imperdiet pharetra</h2>
+  </header>
+  <div id="gallery" class="gallery-container">
+  <ul class="gallery-navigation">
+    <li class="gallery-navigation__buttons"><a class="gallery-navigation__links" href="#dogs">dogs</a></li>
+    <li class="gallery-navigation__buttons"><a class="gallery-navigation__links" href="#nature">nature</a></li>
+    <li class="gallery-navigation__buttons"><a class="gallery-navigation__links" href="#flowers">flowers</a></li>
+  </ul>
+  <div id="dogs" class="gallerys dogs-gallery">
+      <h3 class="gallerys__title">Sed eget felis in felis lobortis auctor. Nunc fermentum vitae diam et hendrerit.</h3>
+      <img class="gallerys__images" src="images/dogs/1.jpg" alt="">
+      <div class="gallerys__buttons next-button"><i class="far fa-arrow-alt-circle-right"></i></div>
+      <div class=" gallerys__buttons previous-button"><i class="far fa-arrow-alt-circle-left"></i></div>
+      <div class="hide-images">
+        <img class="gallerys__images-hide" src="images/dogs/1.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/dogs/2.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/dogs/3.jpg" alt="">
+      </div>
+  </div>
+  <div id="nature" class="gallerys nature-gallery">
+      <h2 class="gallerys__title">Phasellus non massa auctor, dignissim erat vel, tempor quam. Curabitur nec velit felis.</h2>
+      <img class="gallerys__images" src="images/nature/1.jpg" alt="">
+      <div class="gallerys__buttons next-button"><i class="far fa-arrow-alt-circle-right"></i></div>
+      <div class=" gallerys__buttons previous-button"><i class="far fa-arrow-alt-circle-left"></i></div>
+      <div class="hide-images">
+        <img class="gallerys__images-hide" src="images/nature/1.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/nature/2.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/nature/3.jpg" alt="">
+      </div>
+  </div>
+  <div id="flowers" class="gallerys flowers-gallery">
+    <h2 class="gallerys__title">Aenean eu mauris lorem.</h2>
+      <img class="gallerys__images" src="images/flowers/1.jpg" alt="">
+      <div class="gallerys__buttons next-button"><i class="far fa-arrow-alt-circle-right"></i></div>
+      <div class=" gallerys__buttons previous-button"><i class="far fa-arrow-alt-circle-left"></i></div>
+      <div class="hide-images">
+        <img class="gallerys__images-hide" src="images/flowers/1.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/flowers/2.jpg" alt="">
+        <img class="gallerys__images-hide" src="images/flowers/3.jpg" alt="">
+      </div>
+  </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>
