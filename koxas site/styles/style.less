@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background: radial-gradient(at top right, #5a8a8a, #fdeacf);
+  background: #fdeacf;
 }
 figure, h1, h2, h3, p {
   padding: 0;
@@ -101,8 +101,8 @@ i:hover, {
   .sections {
     text-align: center;
     &__headers {
-    font-size: 6vw;
-    padding-top: 3rem;
+    font-size: 5rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     color: black;
     }
@@ -163,6 +163,9 @@ i:hover, {
   }
 
   .examples-section{
+    &__instruction-header {
+      padding-bottom: 2rem;
+    }
     &__figure {
       position: relative;
       max-width: 1024px;
@@ -184,6 +187,9 @@ i:hover, {
         position: absolute;
         right: 0rem;
       }
+      .hidden-images {
+        display: none;
+      }
     }
     .figureOdd {
       padding-left: 5rem;
@@ -194,8 +200,9 @@ i:hover, {
     &__image {
       width: 100%;
       height: auto;
-      display: block;
+      display: inline;
       border: 1px solid #974d2640;
+      box-shadow: 0 1px 2px 0 rgba(60,64,67,0.5), 0 1px 3px 1px rgba(60,64,67,0.5);
     }
   }
   .last-section {

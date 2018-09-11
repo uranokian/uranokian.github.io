@@ -15,7 +15,7 @@
   crossorigin="anonymous">
   </script>
 
-  <title>Document</title>
+  <title>Koxa site</title>
 </head>
 <body>
 <section class="sidebar">
@@ -78,25 +78,60 @@
   </section>
   <section class="sections examples-section">
     <h1 id="Examples" class="sections__headers">Приклади робіт</h1>
+    <h2 class="examples-section__instruction-header">
+      Для зміни фотографій потрібно клацнути на саме фото!
+    </h2>
     <figure class="examples-section__figure figureOdd">
       <span class="number-for-figureOdd">01.</span>
-      <img class="examples-section__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/2489af67581693.5b3e727f94d88.jpg" alt="">
+      <div class="gallery first-gallery">
+      <img class="examples-section__image main-image" src="styles/pictures/01/01-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/02-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/04-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/05-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/06-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/07-min.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/01/08-min.jpg" alt="">
+      </div>
     </figure>
     <figure class="examples-section__figure figureEven">
       <span class="number-for-figureEven">02.</span>
-      <img class="examples-section__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4b511567581651.5b3e723553fbe.jpg" alt="">
+      <div class="gallery second-gallery">
+      <img class="examples-section__image main-image" src="styles/pictures/02/01.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/02.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/03.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/04.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/05.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/06.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/07.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/08.jpg" alt="">
+      <img class="examples-section__image hidden-images" src="styles/pictures/02/09.jpg" alt="">
+      </div>
     </figure>
     <figure class="examples-section__figure figureOdd">
       <span class="number-for-figureOdd">03.</span>
-      <img class="examples-section__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e368467581483.5b3e70c4ee6ac.jpg" alt="">
+      <div class="gallery third-gallery">
+        <img class="examples-section__image main-image" src="styles/pictures/03/01.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/03/02.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/03/03.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/03/04.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/03/06.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/03/07.jpg" alt="">
+      </div>
     </figure>
     <figure class="examples-section__figure figureEven">
       <span class="number-for-figureEven">04.</span>
-      <img class="examples-section__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0006b162790251.5a9c0f6f25fb7.jpg" alt="">
+      <div class="gallery fourth-gallery">
+        <img class="examples-section__image main-image" src="styles/pictures/04/01.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/04/02.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/04/03.jpg" alt="">
+      </div>
     </figure>
     <figure class="examples-section__figure figureOdd">
       <span class="number-for-figureOdd">05.</span>
-      <img class="examples-section__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/69ffce62008367.5a81c94167ae7.jpg" alt="">
+      <div class="gallery fifth-gallery">
+        <img class="examples-section__image main-image" src="styles/pictures/05/01.jpg" alt="">
+        <img class="examples-section__image hidden-images" src="styles/pictures/05/02.jpg" alt="">
+      </div>
     </figure>
   </section>
   <section class="sections contact-section">
@@ -104,5 +139,6 @@
   </section>
 </main>
 <script src="scripts/script.js"></script>
+<script src="scripts/galleries.js"></script>
 </body>
 </html>

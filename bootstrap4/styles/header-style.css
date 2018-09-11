@@ -6,6 +6,7 @@
   background-blend-mode: screen;
   height: 100vh;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .header .header-block .header-block-information__big-text {
   font-size: 4.5rem;
