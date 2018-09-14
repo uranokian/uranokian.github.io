@@ -1,11 +1,10 @@
 .header .header-block {
   background-image: url("https://images3.alphacoders.com/658/658828.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: 50% 0;
   background-color: #8c8c8c;
   background-blend-mode: screen;
   height: 100vh;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
