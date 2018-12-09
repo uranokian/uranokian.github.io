@@ -1,0 +1,154 @@
+
+.subscribe-block-wrapper {
+  background: url("pictures/pic13.jpg");
+  padding: 7rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px) {
+  .subscribe-block-wrapper {
+    padding: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .subscribe-block-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.subscribe-block-wrapper .subscribe-block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
+  .subscribe-block-wrapper .subscribe-block {
+    width: 100%;
+    align-items: center;
+  }
+}
+.subscribe-block-wrapper .subscribe-block__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
+  .subscribe-block-wrapper .subscribe-block__title {
+    text-align: center;
+  }
+}
+.subscribe-block-wrapper .subscribe-block__article {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
+  .subscribe-block-wrapper .subscribe-block__article {
+    text-align: center;
+  }
+}
+.subscribe-block-wrapper .subscribe-block__email-input {
+  width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: 3px solid #4a4e58;
+  border-radius: 2px;
+}
+.subscribe-block-wrapper .subscribe-block__submit-button {
+  font-size: 2rem;
+  border-radius: 2px;
+  border: 3px solid #4a4e58;
+  color: #2d2d31;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 1rem;
+  letter-spacing: 1px;
+  width: 150px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 575.98px) {
+  .subscribe-block-wrapper .subscribe-block__submit-button {
+    padding: 0.2rem;
+    bottom: 0;
+  }
+}
+.subscribe-block-wrapper .subscribe-block__submit-button:hover {
+  color: #ffffff;
+  background-color: #4a4e58;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
+  .subscribe-block-wrapper .subscribe-block__submit-button {
+    margin-left: 25%;
+    padding: 0.5rem;
+  }
+}
+.footer-bottom {
+  background-color: #414141;
+}
+.footer-bottom .develop-information-wrapper {
+  padding: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px) {
+  .footer-bottom .develop-information-wrapper {
+    padding: 3rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-bottom .develop-information-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+  }
+}
+.footer-bottom .develop-information-wrapper .logo-author-block {
+  display: flex;
+  flex-basis: 60%;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px), (max-width: 575.98px) {
+  .footer-bottom .develop-information-wrapper .logo-author-block {
+    margin-bottom: 2rem;
+    padding-right: 0rem;
+  }
+}
+.footer-bottom .develop-information-wrapper .logo-author-block__title {
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px), (max-width: 575.98px) {
+  .footer-bottom .develop-information-wrapper .logo-author-block__title {
+    text-align: center;
+  }
+}
+.footer-bottom .develop-information-wrapper .logo-author-block__develop-information {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: white;
+}
+.footer-bottom .develop-information-wrapper .logo-author-block__develop-information .red-text {
+  color: rgba(255, 0, 0, 0.774);
+}
+@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px), (max-width: 575.98px) {
+  .footer-bottom .develop-information-wrapper .logo-author-block__develop-information {
+    text-align: center;
+  }
+}
+.footer-bottom .develop-information-wrapper__cards-block {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .develop-information-wrapper__cards-block .pay-methods {
+  display: flex;
+}
+.footer-bottom .develop-information-wrapper__cards-block .pay-methods__images {
+  font-size: 3rem;
+  color: white;
+}

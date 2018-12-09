@@ -1,0 +1,124 @@
+@laptop-Large: ~"(min-width: 1200px)";
+@laptop: ~"(min-width: 992px) and (max-width: 1199.98px)";
+@tablet: ~"(min-width: 768px) and (max-width: 991.98px)";
+@large-phone: ~"(min-width: 576px) and (max-width: 767.98px)";
+@phone: ~"(max-width: 575.98px)";
+
+@import "header.less";
+
+.subscribe-block-wrapper {
+    background: url("pictures/pic13.jpg");
+    padding: 7rem;
+    @media @large-phone, @tablet  {
+        padding: 3rem;
+    }
+    @media @phone  {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .subscribe-block {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        @media @large-phone, @phone  {
+            width: 100%;
+            align-items: center;
+        }
+        &__title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            @media @large-phone, @phone  {
+                text-align: center;
+            }
+        }
+        &__article {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            @media @large-phone, @phone  {
+                text-align: center;
+            }
+        }
+        &__email-input {
+            width: 300px;
+            padding: 0.5rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border: 3px solid darken(#b1b4bd, 40%);
+            border-radius: 2px;
+        }
+        &__submit-button {
+            .style-for-buttons;
+            width: 150px;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            @media @large-phone, @phone  {
+                margin-left: 25%;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: rgb(65, 65, 65);
+    .develop-information-wrapper {
+        padding: 7rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: flex;
+        @media @large-phone, @tablet  {
+            padding: 3rem;
+            flex-direction: column;
+        }
+        @media @phone  {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex-direction: column;
+        }
+        .logo-author-block {
+            display: flex;
+            flex-basis: 60%;
+            flex-direction: column;
+            padding-right: 2rem;
+            @media @large-phone, @tablet, @phone  {
+                margin-bottom: 2rem;
+                padding-right: 0rem;
+            }
+            &__title {
+                color: white;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+                @media @large-phone, @tablet, @phone  {
+                    text-align: center;
+                }
+            }
+            &__develop-information {
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                color: white;
+                .red-text {
+                    color: rgba(255, 0, 0, 0.774);
+                }
+                @media @large-phone, @tablet, @phone  {
+                    text-align: center;
+                }
+            }
+        }
+        &__cards-block {
+            display: flex;
+            flex-basis: 40%;
+            justify-content: space-between;
+            align-items: center;
+            .pay-methods {
+                display: flex;
+                &__images {
+                    font-size: 3rem;
+                    color: white;
+
+                }
+            }
+        }
+    }
+}

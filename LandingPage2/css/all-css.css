@@ -1,0 +1,19 @@
+@import "header.css";
+@import "services-section.css";
+@import "company-info-section.css";
+@import "app-presentation-section.css";
+@import "video-section.css";
+@import "download-section.css";
+@import "quote-section.css";
+@import "add-app-section.css";
+@import "footer.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Overlock SC', cursive;
+    line-height: 1.4;
+}

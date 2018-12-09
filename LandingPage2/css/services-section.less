@@ -1,0 +1,76 @@
+@import "media.less";
+
+.services-section {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.services-section-background {
+    background-color: whitesmoke;
+    margin-top: -4rem;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    @media @Small-devices {
+        margin: 0;
+    }
+    @media @Extra-small {
+        margin-top: -6rem;
+        padding-top: 12rem;
+    }
+}
+
+.services-section {
+    &__header {
+        text-align: center;
+        width: 100%;
+    }
+    .divider {
+        width: 100px;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    &__cards-wrapper {
+        margin-top: 3rem;
+        justify-content: space-between;
+        @media @Extra-small {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media @Small-devices {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+    .independent-card {
+        border: 1px solid darken(whitesmoke, 10%);
+        text-align: center;
+        margin: 1rem;
+        padding: 1.5rem;
+        max-width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+        @media @Extra-small {
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        @media @Small-devices {
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        
+        &__picture {
+            font-size: 2rem;
+        }
+        &__title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
+}

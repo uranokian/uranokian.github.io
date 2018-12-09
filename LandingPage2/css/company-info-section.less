@@ -1,0 +1,39 @@
+@import "media.less";
+
+.company-info-section-bakground {
+    background-color: #223047;
+    padding: 0;
+    background: linear-gradient(to top, #223047, white);
+    background-attachment: fixed;
+}
+
+.company-info-section { 
+    max-width: 1140px;
+    margin: 0 auto;
+    .company-info-wrapper {
+        background-color: darken(whitesmoke, 5%);
+        padding: 4rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        text-align: left;
+        @media @Extra-small, @Small-devices {
+            text-align: center;
+        }
+        @media @Extra-small {
+            padding: 2.5rem;
+        }
+        @media @Extra-small, @Small-devices {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    &__empty-column {
+        background-color: darken(whitesmoke, 5%);
+    }
+}

@@ -1,0 +1,42 @@
+.company-info-section-bakground {
+  background-color: #223047;
+  padding: 0;
+  background: linear-gradient(to top, #223047, #ffffff);
+  background-attachment: fixed;
+}
+.company-info-section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.company-info-section .company-info-wrapper {
+  background-color: #e8e8e8;
+  padding: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: left;
+}
+@media (max-width: 575.98px), (min-width: 576px) and (max-width: 767.98px) {
+  .company-info-section .company-info-wrapper {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .company-info-section .company-info-wrapper {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 575.98px), (min-width: 576px) and (max-width: 767.98px) {
+  .company-info-section .company-info-wrapper {
+    max-width: 100%;
+  }
+}
+.company-info-section__title {
+  margin-bottom: 2rem;
+}
+.company-info-section__text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.company-info-section__empty-column {
+  background-color: #e8e8e8;
+}
