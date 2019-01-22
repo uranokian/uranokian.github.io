@@ -1,0 +1,87 @@
+body {
+  background-color: #c7f0ee;
+}
+.top-header {
+  height: 100vh;
+}
+.top-header .navigation {
+  padding: 0.5rem;
+}
+.top-header .navigation .navigation-logo__icon {
+  max-width: 64px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.top-header .navigation .navigation-logo__header {
+  display: inline-block;
+  color: black;
+}
+.top-header .navigation .navigation-button__button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.top-header .navigation .navigation-button__icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.top-header .navigation .navigation-button__icon:hover {
+  transform: scaleY(1.2);
+}
+.hidden-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(49, 49, 49, 0.952);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: translateY(-100%);
+}
+.hidden-menu__group {
+  max-width: 300px;
+  padding: 1rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden-menu__item {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+.hidden-menu__link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s linear;
+}
+@media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px) {
+  .hidden-menu__link {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-menu__link {
+    font-size: 4rem;
+  }
+}
+.hidden-menu__link:hover {
+  border-bottom: 3px solid white;
+}
+.hidden-menu .close-button {
+  position: absolute;
+  font-size: 3rem;
+  right: 2rem;
+  top: 2rem;
+  color: white;
+}
+.hidden-menu .close-button__icon {
+  cursor: pointer;
+  font-size: 3rem;
+}
