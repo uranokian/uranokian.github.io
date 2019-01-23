@@ -25,10 +25,11 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px), (min-width: 1200px) {
   .top-header {
     height: 100vh;
+    padding-top: 10rem;
   }
 }
 .navigation-wrapper {
-  background: #838383 url("../photos/clone-min.jpg");
+  background: #121522;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,17 +39,6 @@ body {
   top: 0;
   z-index: 5;
   transition: background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.navigation-wrapper-scrolled {
-  background: #08001f;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  position: sticky;
-  background-blend-mode: darken;
-  top: 0;
-  z-index: 5;
 }
 .navigation {
   padding: 0.5rem;
@@ -114,7 +104,7 @@ body {
 }
 .introduction-information__sub-header {
   color: white;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .introduction-information__button {
   padding: 0.5rem;

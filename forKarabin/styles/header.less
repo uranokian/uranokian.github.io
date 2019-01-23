@@ -28,11 +28,12 @@ body {
     padding-bottom: 1rem;
     @media @medium-devices, @large-devices, @extra-large-devices {
         height: 100vh;
+        padding-top: 10rem;
     }
 }
 
 .navigation-wrapper {
-    background: rgb(131, 131, 131) url("../photos/clone-min.jpg");
+    background: rgb(18, 21, 34);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,19 +44,6 @@ body {
     top: 0;
     z-index: 5;
     transition: background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.navigation-wrapper-scrolled {
-    background: rgb(8, 0, 31);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    background-blend-mode: darken;
-    position: sticky;
-    background-blend-mode: darken;
-    top: 0;
-    z-index: 5;
 }
 
 .navigation {
@@ -117,7 +105,7 @@ body {
     }
     &__sub-header {
         color: white;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     &__button {
         padding: 0.5rem;
