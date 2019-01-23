@@ -3,55 +3,137 @@ body {
     background-color: #c7f0ee;
 }
 
-.top-header {
-    
-    height: 100vh;
-    .navigation-wrapper {
-    }
-    .navigation {
-        padding: 0.5rem;
-        .navigation-logo {
-            &__icon {
-                max-width: 64px;
-                border-radius: 50%;
-                margin-right: 0.5rem;
-            }
-            &__header {
-                display: inline-block;
-                color: black;
+.common-button {
+  border: 3px solid black;
+  background-color: rgb(200, 0, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  color: white;
+}
 
-            }
+.common-button:hover {
+    background-color: lighten(rgb(200, 0, 0), 15%);
+    color: darken(white, 15%);
+}
+
+
+.top-header {
+    background: rgb(131, 131, 131) url("../photos/clone-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.navigation-wrapper {
+    background: rgb(131, 131, 131) url("../photos/clone-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-blend-mode: darken;
+    position: sticky;
+    background-blend-mode: darken;
+    top: 0;
+    z-index: 5;
+    transition: background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navigation-wrapper-scrolled {
+    background: rgb(8, 0, 31);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-blend-mode: darken;
+    position: sticky;
+    background-blend-mode: darken;
+    top: 0;
+    z-index: 5;
+}
+
+.navigation {
+    padding: 0.5rem;
+    .navigation-logo {
+        &__icon {
+            max-width: 64px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
         }
-        .navigation-button {
-            &__button {
-                padding: 0;
-                margin: 0;
-                border: 0;
-                background-color: transparent;
-            }
-            &__icon {
-                font-size: 2rem;
-                cursor: pointer;
-                transform: scaleY(1);
-                transform-origin: top;
-            }
-            &__icon:hover {
-                transform: scaleY(1.2);
-            }
+        &__header {
+            display: inline-block;
+            color: white;
+
+        }
+    }
+    .navigation-button {
+        &__button {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: transparent;
+        }
+        &__icon {
+            font-size: 2rem;
+            cursor: pointer;
+            transform: scaleY(1);
+            transform-origin: top;
+            color: white;
+        }
+        &__icon:hover {
+            transform: scaleY(1.2);
         }
     }
 }
 
+.introduction-information {
+    text-align: left;
+    @media @small-devices, @extra-small-devices {
+        text-align: center;
+    }
+    &__header {
+        color: white;
+        font-size: 2.2rem;
+        @media @large-devices, @extra-large-devices {
+            font-size: 2.5rem;
+        }
+        @media @extra-large-devices {
+            font-size: 3.75rem;
+        }
+    }
+    &__sub-header {
+        color: white;
+    }
+    &__button {
+        padding: 0.5rem;
+        max-width: 300px;
+        font-size: 2rem;
+    }
+}
+
+.introduction-picture {
+    &__image {
+        min-width: 250px;
+        height: auto;
+        width: 100%;
+        display: block;
+        box-shadow: 0px 0px 0px 7px #000;
+    }
+}
+
 .hidden-menu {
-    
-    position: absolute;
+    z-index: 6;
+    position: fixed;
     left: 0;
     top: 0;
-    background-color: rgba(49, 49, 49, 0.952);
+    background-color: #252525f1;
     width: 100vw;
     height: 100vh;
-    transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transform: translateY(-100%);
+    transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &__group {
         max-width: 300px;
         padding: 1rem;
