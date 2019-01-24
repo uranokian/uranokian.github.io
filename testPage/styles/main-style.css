@@ -1,0 +1,6 @@
+@import "top-header.css";
+
+*{
+    box-sizing: border-box;
+    outline: none;
+}
