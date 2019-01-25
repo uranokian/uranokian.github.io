@@ -1,7 +1,6 @@
 .top-header-wrapper {
   background: url("../backgrounds/bg.jpg");
   height: 100vh;
-  width: 100vw;
   background-size: cover;
   background-position: center center;
 }
@@ -179,7 +178,7 @@
 }
 .radio-buttons-for-scrolling {
   position: absolute;
-  right: 10px;
+  right: 35px;
   top: 50%;
 }
 .radio-buttons-wrapper {
@@ -187,8 +186,8 @@
   position: relative;
 }
 .radio-buttons-wrapper .radio-buttons {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid black;
@@ -202,7 +201,7 @@
   content: "";
   position: absolute;
   left: -30px;
-  top: 8px;
+  top: 5.5px;
   height: 1px;
   width: 30px;
   background: black;
@@ -211,7 +210,7 @@
   content: "home";
   position: absolute;
   left: -75px;
-  top: -1px;
+  top: -3px;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.699);
 }
