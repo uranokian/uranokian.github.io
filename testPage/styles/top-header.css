@@ -6,7 +6,7 @@
   background-position: center center;
 }
 .navigation-menu {
-  font-family: 'Concert One', cursive;
+  font-family: 'Roboto', sans-serif;
   padding: 1.375rem 2.25rem;
   border-radius: 35px;
   background-color: #ECB757;
@@ -39,7 +39,7 @@
   background: -webkit-gradient(linear, left bottom, left top, from(#fe2e2e), to(#fe2e7c));
   background: -webkit-linear-gradient(bottom, #fe2e2e, #fe2e7c);
   background: -o-linear-gradient(bottom, #fe2e2e, #fe2e7c);
-  background: linear-gradient(to top, #fe2e2e, #fe2e7c);
+  background: linear-gradient(to right, #fe2e2e, #fedf2e);
   -webkit-transition: width 0.2s ease-in-out;
   -o-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
@@ -68,10 +68,16 @@
   height: auto;
   width: 100%;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .introduction-information-logo__picture {
+    max-width: 220px;
+    max-height: 150px;
+  }
+}
 .introduction-information-title {
   font-size: 2.3rem;
   font-weight: bold;
-  font-family: 'Concert One', cursive;
+  font-family: 'Bebas Neue';
   letter-spacing: 10px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -91,9 +97,24 @@
 }
 .introduction-information-title__first {
   color: #CF912A;
+  font-weight: 700;
+  line-height: 0.7;
+  padding-top: 1.5rem;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .introduction-information-title__first {
+    font-size: 5.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .introduction-information-title__first {
+    font-size: 6.3rem;
+  }
 }
 .introduction-information-title__second {
   color: #303075;
+  font-weight: 400;
+  line-height: 0.6;
 }
 .introduction-information-title__number {
   font-size: 3rem;
@@ -114,26 +135,27 @@
   }
 }
 .introduction-information-subtitle {
-  font-size: 2rem;
+  font-size: 1,4rem;
   text-align: center;
-  font-weight: bold;
   letter-spacing: 2px;
-  font-family: 'Concert One', cursive;
+  font-family: 'Roboto', sans-serif;
   position: relative;
+  font-weight: bold;
+  padding-top: 1rem;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .introduction-information-subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .introduction-information-subtitle {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1200px) {
   .introduction-information-subtitle {
-    font-size: 4.5rem;
+    font-size: 2.7rem;
   }
 }
 .introduction-information-subtitle::before {
@@ -157,10 +179,7 @@
   -webkit-box-shadow: 0px 9px 43px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 9px 43px 0px rgba(0, 0, 0, 0.75);
   border-radius: 35px;
-  background: -webkit-gradient(linear, right bottom, left top, from(#fe2e7c), to(#ffd940));
-  background: -webkit-linear-gradient(bottom right, #fe2e7c, #ffd940);
-  background: -o-linear-gradient(bottom right, #fe2e7c, #ffd940);
-  background: linear-gradient(to top left, #fe2e7c, #ffd940);
+  background: linear-gradient(to bottom right, #ab00ff, #ffaccb);
   -webkit-transition: 0.1s linear;
   -o-transition: 0.1s linear;
   transition: 0.1s linear;
@@ -174,41 +193,45 @@
   box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
 }
 .introduction-buttons__with-margin {
-  border: 0;
-  background: none;
-  cursor: pointer;
+  color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
-  border-top: 2px solid #FF5A5A;
-  border-bottom: 2px solid #FF5A5A;
+  padding: 1rem 2rem;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 9px 43px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 43px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 35px;
+  background: linear-gradient(to bottom right, #ab00ff, #ffaccb);
   -webkit-transition: 0.1s linear;
   -o-transition: 0.1s linear;
   transition: 0.1s linear;
   margin-left: 1rem;
 }
 .introduction-buttons__with-margin:hover {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-top: 5px solid #FF5A5A;
-  border-bottom: 5px solid #FF5A5A;
+  -webkit-box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.75);
 }
 .introduction-buttons__with-margin:active {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-top: 7px solid #FF5A5A;
-  border-bottom: 7px solid #FF5A5A;
+  -webkit-box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
 }
 .decoration-line {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 .decoration-scroll-down {
   position: absolute;
-  bottom: 3rem;
+  bottom: 1.5rem;
   left: 50%;
+  margin-left: 0.35rem;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
+}
+.decoration-scroll-down__picture {
+  width: 100px;
+  height: 80px;
 }
 .radio-buttons-wrapper {
   float: right;

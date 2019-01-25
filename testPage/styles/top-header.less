@@ -9,7 +9,7 @@
     }
     
     .navigation-menu {
-        font-family: 'Concert One', cursive;
+        font-family: 'Roboto', sans-serif;
         padding: 1.375rem 2.25rem; 
         border-radius: 35px;
         background-color: #ECB757;
@@ -28,6 +28,7 @@
             text-decoration: none;
             position: relative;
             padding-bottom: 5px;
+
             &:hover {
                 color: white;
             }
@@ -40,7 +41,7 @@
                 background: -webkit-gradient(linear, left bottom, left top, from(rgb(254, 46, 46)), to(#FE2E7C) );
                 background: -webkit-linear-gradient(bottom, rgb(254, 46, 46), #FE2E7C );
                 background: -o-linear-gradient(bottom, rgb(254, 46, 46), #FE2E7C );
-                background: linear-gradient(to top, rgb(254, 46, 46), #FE2E7C );
+                background: linear-gradient(to right, rgb(254, 46, 46), rgb(254, 223, 46) );
                 -webkit-transition: width 0.2s ease-in-out;
                 -o-transition: width 0.2s ease-in-out;
                 transition: width 0.2s ease-in-out;
@@ -77,13 +78,17 @@
             max-width: 320px;
             height: auto;
             width: 100%;
+            @media @large {
+                max-width: 220px;
+                max-height: 150px;
+            }
         }
     }
     
     .introduction-information-title {
         font-size: 2.3rem;
         font-weight: bold;
-        font-family: 'Concert One', cursive;
+        font-family: 'Bebas Neue';
         letter-spacing: 10px;
         @media @medium {
             font-size: 3.3rem;
@@ -97,10 +102,21 @@
 
         &__first {
             color: #CF912A;
+            font-weight: 700;
+            line-height: 0.7;
+            padding-top: 1.5rem;
+            @media @large {
+                font-size: 5.3rem;
+            }
+            @media @extra-large {
+                font-size: 6.3rem;
+            }
             
         }
         &__second {
             color: #303075;
+            font-weight: 400;
+            line-height: 0.6;
             
         }
         &__number {
@@ -118,20 +134,21 @@
     }
     
     .introduction-information-subtitle {
-        font-size: 2rem;
+        font-size: 1,4rem;
         text-align: center;
-        font-weight: bold;
         letter-spacing: 2px;
-        font-family: 'Concert One', cursive;
+        font-family: 'Roboto', sans-serif;
         position: relative;
+        font-weight: bold;
+        padding-top: 1rem;
         @media @medium {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         @media @large {
-            font-size: 4rem;
+            font-size: 2rem;
         }
         @media @extra-large {
-            font-size: 4.5rem;
+            font-size: 2.7rem;
         }
         &::before {
             content: url("../backgrounds/line\ zigzag.png");
@@ -157,10 +174,7 @@
             -webkit-box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
             box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
             border-radius: 35px;
-            background: -webkit-gradient(linear, right bottom, left top, from(#FE2E7C), to(#FFD940));
-            background: -webkit-linear-gradient(bottom right, #FE2E7C, #FFD940);
-            background: -o-linear-gradient(bottom right, #FE2E7C, #FFD940);
-            background: linear-gradient(to top left, #FE2E7C, #FFD940);
+            background: linear-gradient(to bottom right, #AB00FF, #FFACCB);
             -webkit-transition: 0.1s linear;
             -o-transition: 0.1s linear;
             transition: 0.1s linear;
@@ -174,44 +188,48 @@
             }
         }
         &__with-margin {
-            border: 0;
-            background: none;
-            cursor: pointer;
+            color: white;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             letter-spacing: 1px;
-            border-top: 2px solid #FF5A5A;
-            border-bottom: 2px solid #FF5A5A;
+            padding: 1rem 2rem;
+            border: 0;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
+            border-radius: 35px;
+            background: linear-gradient(to bottom right, #AB00FF, #FFACCB);
             -webkit-transition: 0.1s linear;
             -o-transition: 0.1s linear;
             transition: 0.1s linear;
             margin-left: 1rem;
             &:hover {
-                padding-top: 5px;
-                padding-bottom: 5px;
-                border-top: 5px solid #FF5A5A;
-                border-bottom: 5px solid #FF5A5A;
+                -webkit-box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
             }
             &:active {
-                padding-top: 7px;
-                padding-bottom: 7px;
-                border-top: 7px solid #FF5A5A;
-                border-bottom: 7px solid #FF5A5A;
+                -webkit-box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+                        box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
             }
         }
     }
     
     .decoration-line {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     
     .decoration-scroll-down {
         position: absolute;
-        bottom: 3rem;
+        bottom: 1.5rem;
         left: 50%;
+        margin-left: 0.35rem;
         -webkit-transform: translate(-50%);
-            -ms-transform: translate(-50%);
-                transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
+        &__picture {
+            width: 100px;
+            height: 80px;
+        }
     }
     
     .radio-buttons-wrapper {
