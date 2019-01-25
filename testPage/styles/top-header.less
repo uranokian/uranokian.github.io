@@ -67,53 +67,28 @@
     
     
     .navigation-wrapper {
-        padding-top: 2.375rem;
-    }
-    
-    
-    .introduction-information {
-        margin-top: 1.5rem;
+        padding-top: 0.5rem;
     }
     
     .introduction-information-logo {
+        
         &__picture {
-            display: block;
-            max-width: 320px;
-            height: auto;
-            width: 100%;
-            @media @large {
-                max-width: 220px;
-                max-height: 150px;
-            }
+            float: right;
+            width: 65%;
         }
     }
     
     .introduction-information-title {
-        font-size: 2.3rem;
+        font-size: 6vw;
         font-weight: bold;
         font-family: 'Bebas Neue';
         letter-spacing: 10px;
-        @media @medium {
-            font-size: 3.3rem;
-        }
-        @media @large {
-            font-size: 4.3rem;
-        }
-        @media @extra-large {
-            font-size: 5.3rem;
-        }
 
         &__first {
             color: #CF912A;
             font-weight: 700;
-            line-height: 0.7;
+            line-height: 0.8;
             padding-top: 1.5rem;
-            @media @large {
-                font-size: 5.3rem;
-            }
-            @media @extra-large {
-                font-size: 6.3rem;
-            }
             
         }
         &__second {
@@ -123,55 +98,36 @@
             
         }
         &__number {
-            font-size: 3rem;
-            @media @medium {
-                font-size: 4.3rem;
-            }
-            @media @large {
-                font-size: 5.3rem;
-            }
-            @media @extra-large {
-                font-size: 6.3rem;
-            }
+            font-size: 7vw;
+            font-weight: bold;
         }
     }
     
     .introduction-information-subtitle {
-        font-size: 1,4rem;
+        font-size: 2.8vw;
         text-align: center;
         letter-spacing: 2px;
         font-family: 'Roboto', sans-serif;
         position: relative;
         font-weight: bold;
         padding-top: 1rem;
-        @media @medium {
-            font-size: 2rem;
-        }
-        @media @large {
-            font-size: 2rem;
-        }
-        @media @extra-large {
-            font-size: 2.7rem;
-        }
-        &::before {
-            content: url("../backgrounds/line\ zigzag.png");
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
         
     }
     
     .introduction-buttons{
         position: relative;
         margin-top: 2rem;
-        
+        &::before {
+            content: url("../backgrounds/line\ zigzag.png");
+            position: absolute;
+            bottom: -50%;
+            left: 60px;
+        }
         &__round {
             color: white;
             font-weight: bold;
             font-size: 1.1rem;
             letter-spacing: 1px;
-            padding: 1rem 2rem;
             border: 0;
             cursor: pointer;
             -webkit-box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
@@ -184,6 +140,7 @@
             -webkit-transition: 0.1s linear;
             -o-transition: 0.1s linear;
             transition: 0.1s linear;
+            padding: 0.8rem 2.5rem;
             &:hover {
                 -webkit-box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
                 box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
@@ -198,7 +155,6 @@
             font-weight: bold;
             font-size: 1.1rem;
             letter-spacing: 1px;
-            padding: 1rem 2rem;
             border: 0;
             cursor: pointer;
             -webkit-box-shadow: 0px 9px 43px 0px rgba(0,0,0,0.75);
@@ -212,6 +168,7 @@
             -o-transition: 0.1s linear;
             transition: 0.1s linear;
             margin-left: 1rem;
+            padding: 0.8rem 2.5rem;
             &:hover {
                 -webkit-box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
                 box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
@@ -236,11 +193,16 @@
         -ms-transform: translate(-50%);
         transform: translate(-50%);
         &__picture {
-            width: 100px;
-            height: 80px;
+            width: 90px;
+            height: 70px;
         }
     }
-    
+
+    .radio-buttons-for-scrolling {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+    }
     .radio-buttons-wrapper {
         float: right;
         position: relative;
