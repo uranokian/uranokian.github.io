@@ -18,7 +18,7 @@
 
 <body>
 	<!--Header Page-->
-	<header class="top-header-wrapper container-fluid">
+	<header class="top-header-wrapper container-fluid" id="home">
 		<div class="row navigation-wrapper">
 			<nav class="navigation-menu col-8 mr-auto offset-2  ">
 				<ul class="navigation-menu__group d-flex justify-content-between">
@@ -64,10 +64,10 @@
 		<section class="radio-buttons-for-scrolling">
 			<div class="radio-buttons-wrapper">
 				<div class="radio-buttons checked-home"></div>
-				<div class="radio-buttons"></div>
-				<div class="radio-buttons"></div>
-				<div class="radio-buttons"></div>
-				<div class="radio-buttons"></div>
+				<a href="#about"><div class="radio-buttons"></div></a>
+				<div class="radio-buttons"><a href="#comments" class="scroll"></a></div>
+				<div class="radio-buttons"><a href="#comments" class="scroll"></a></div>
+				<div class="radio-buttons"><a href="#comments" class="scroll"></a></div>
 			</div>
 		</section>
 		<section class="container decoration-line">
@@ -81,11 +81,11 @@
     </header>
     
     <!--Main section-->
-    <main class="main-section">
+    <main class="main-section" id="about">
             <section class="radio-buttons-for-scrolling-2">
                     <div class="radio-buttons-wrapper-2">
-                        <div class="radio-buttons-2"></div>
-                        <div class="radio-buttons-2 checked-second"></div>
+                        <a href="#home"><div class="radio-buttons-2"></div></a>
+                        <div class="radio-buttons-2 checked-second scroll"></div>
                         <div class="radio-buttons-2"></div>
                         <div class="radio-buttons-2"></div>
                         <div class="radio-buttons-2"></div>
@@ -167,7 +167,8 @@
         </div>
     </main>
 	<script src="scripts/scriptForHumburgers.js"></script>
-	<script src="scripts/top-menu.js"></script>
+    <script src="scripts/top-menu.js"></script>
+    <script src="scripts/smooth-scrolling.js"></script>
 </body>
 
 </html>
