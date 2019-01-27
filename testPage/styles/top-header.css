@@ -65,6 +65,13 @@
   float: right;
   width: 65%;
 }
+.hamburger-inner {
+  background-color: white;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white;
+}
 .introduction-information-title {
   font-size: 6vw;
   font-weight: bold;
