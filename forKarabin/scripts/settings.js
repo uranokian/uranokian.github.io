@@ -27,7 +27,10 @@
     );
 
     buyButton.click(function() {
-        location.href = 'https://web.telegram.org/#/im?p=@romadench' || 'tg://resolve?domain=romadench';
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            location.href = "tg://resolve?domain=romadench";
+        } else {
+            location.href = "https://web.telegram.org/#/im?p=@romadench";
+        }
     });
-    romadench
 })();
