@@ -1,18 +1,18 @@
 (function() {
     const FirstColor = "transparent";
-    const SecondColor = "#2d6b22";
+    const SecondColor = "#FC3C3C";
     const buyButton = $(".card-wrapper__buy-button");
     $('.card-wrapper').hover(
         function() {
             $(this).find(".card-wrapper__buy-button").css({
-                "background-color": "#072a16",
-                "color": "white",
+                "background-color": "#F8B500",
+                
             });
         },
         function() {
             $(this).find(".card-wrapper__buy-button").css({
                 "background-color": FirstColor,
-                "color": "rgba(0, 0, 0, 0.774)",   
+                
             });
         });
     buyButton.hover(
@@ -21,8 +21,7 @@
         },
         function() {
             $(this).css({
-                "background-color": "#072a16",
-                "color": "white"
+                "background-color": "#F8B500",
             });
         }
     );
