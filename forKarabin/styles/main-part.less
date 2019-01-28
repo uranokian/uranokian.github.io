@@ -1,0 +1,87 @@
+@import "responsive.less";
+
+.main-part-title-wrapper {
+    &__top-title {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        @media @extra-small-devices {
+            font-size: 2rem;
+        }
+    }
+    &__bottom-title {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        @media @extra-small-devices {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.padding-layout {
+    padding: 1rem;
+}
+
+.card-wrapper {
+    padding: 0;
+    background-color: #157ee071;
+    -webkit-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.68);
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.411);
+    border-radius: 4px;
+    transition: ease-in-out 0.2s;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    &__photo {
+        min-width: 180px;
+        height: auto;
+        width: 100%;
+        display: block;
+        padding-bottom: 1rem;
+        border-radius: 4px;
+    }
+    &__title-wrapper {
+        
+    }
+    &__title {
+        text-align: center;
+        padding: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+    &__text {
+        text-align: center;
+        padding: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+    &__lighter-block {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 1rem;
+        border-radius: 0 0 4px 4px;
+        transition: ease-in-out 0.2s;
+        color: white;
+    }
+    &__buy-button {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 1rem;
+        background-color: transparent;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+        border: 2px solid rgba(0, 0, 0, 0.164);
+        color: rgba(0, 0, 0, 0.774);
+        font-weight: bold;
+        border-radius: 4px;
+        &:hover {
+            background-color: #072a16;
+        }
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+    @media @extra-small-devices {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}

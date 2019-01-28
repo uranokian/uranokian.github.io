@@ -1,6 +1,7 @@
 @import "header.css";
+@import "main-part.css";
 
 * {
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
 }
