@@ -22,26 +22,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-blend-mode: overlay;
-  padding-bottom: 1rem;
+  height: 100vh;
 }
 @media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px), (min-width: 1200px) {
   .top-header {
     height: 100vh;
-    padding-top: 6rem;
   }
-}
-.navigation-wrapper {
-  background: #1a0101;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.164);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  position: sticky;
-  background-blend-mode: darken;
-  top: 0;
-  z-index: 5;
-  transition: background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .navigation {
   padding: 0.5rem;
@@ -81,21 +67,19 @@
 .navigation .navigation-button__icon:hover {
   transform: scaleY(1.2);
 }
-.introduction-information {
-  text-align: left;
+.centered-header {
+  height: 100%;
 }
-@media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
-  .introduction-information {
-    text-align: center;
-  }
+.introduction-information {
+  position: relative;
+  text-align: center;
 }
 .introduction-information__header {
   color: white;
-  font-size: 2.2rem;
-  padding-top: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
-@media (min-width: 992px) and (max-width: 1199.98px), (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .introduction-information__header {
     font-size: 2.5rem;
   }
