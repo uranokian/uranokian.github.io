@@ -23,7 +23,7 @@
 }
 .card-wrapper {
   padding: 0;
-  background-color: #00ADB5;
+  background-color: #FAFFE2;
   -webkit-box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.411);
@@ -73,7 +73,7 @@
   background-color: #072a16;
 }
 .card-wrapper:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 @media (max-width: 575.98px) {
   .card-wrapper:hover {

@@ -2,7 +2,14 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: transparent;
+  background-color: #ffe2ff;
+  transition: ease-in-out 1s;
+}
+.proba .total-scroll {
+  width: 0;
+  height: 4px;
+  background-color: rgba(5, 95, 95, 0.274);
+  transition: linear 0.5s;
 }
 .common-button {
   border: 3px solid black;
@@ -32,6 +39,7 @@
 }
 .navigation {
   padding: 0.5rem;
+  transition: ease-in-out 1s;
 }
 .navigation .navigation-logo__icon {
   max-width: 64px;
@@ -61,6 +69,11 @@
 }
 .navigation .navigation-social-links__icon {
   font-size: 2rem;
+  color: #A649A6;
+}
+.navigation .navigation-social-links__icon:hover {
+  color: #c478c4;
+  transform: scale(1.1);
 }
 .navigation .navigation-button__button {
   padding: 0;
@@ -73,7 +86,7 @@
   cursor: pointer;
   transform: scaleY(1);
   transform-origin: top;
-  color: black;
+  color: #A649A6;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
   .navigation .navigation-button__icon {
@@ -82,6 +95,7 @@
 }
 .navigation .navigation-button__icon:hover {
   transform: scaleY(1.2);
+  color: #c478c4;
 }
 .centered-header {
   height: 100%;

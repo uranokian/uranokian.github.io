@@ -4,7 +4,14 @@
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: transparent;
+    background-color: #ffe2ff;
+    transition: ease-in-out 1s;
+    .total-scroll {
+        width: 0;
+        height: 4px;
+        background-color: rgba(5, 95, 95, 0.274);
+        transition: linear 0.5s;
+    }
 }
 
 .common-button {
@@ -39,6 +46,7 @@
 
 .navigation {
     padding: 0.5rem;
+    transition: ease-in-out 1s;
     .navigation-logo {
         &__icon {
             max-width: 64px;
@@ -64,6 +72,11 @@
         }
         &__icon {
             font-size: 2rem;
+            color: #A649A6;
+            &:hover {
+                color: lighten(#A649A6, 15%);
+                transform: scale(1.1);
+            }
         }
     }
     .navigation-button {
@@ -82,10 +95,11 @@
             cursor: pointer;
             transform: scaleY(1);
             transform-origin: top;
-            color: black;
+            color: #A649A6;
         }
         &__icon:hover {
             transform: scaleY(1.2);
+            color: lighten(#A649A6, 15%);
         }
     }
 }
