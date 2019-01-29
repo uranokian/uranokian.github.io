@@ -1,10 +1,16 @@
 @import "responsive.less";
 
+@backrgound-main-color: #ffe3ff;
+@background-darken-color: darken(#ffe3ff, 3%);
+@background-darkest-color: darken(#ffe3ff, 20%);
+@background-darkAsShit-color: darken(#ffe3ff, 25%);
+
+
 .proba {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: #ffe2ff;
+    background-color: @background-darken-color;
     transition: ease-in-out 1s;
     .total-scroll {
         width: 0;
@@ -14,24 +20,8 @@
     }
 }
 
-.common-button {
-  border: 3px solid black;
-  background-color: rgb(200, 0, 0);
-  border-radius: 2px;
-  cursor: pointer;
-  transition: 0.2s linear;
-  color: white;
-}
-
-
-.common-button:hover {
-    background-color: lighten(rgb(200, 0, 0), 15%);
-    color: darken(white, 15%);
-}
-
-
 .top-header {
-    background: #ffe2ff;
+    background: @backrgound-main-color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
@@ -42,7 +32,6 @@
         height: 100vh;
     }
 }
-
 
 .navigation {
     padding: 0.5rem;
@@ -66,15 +55,17 @@
     }
     .navigation-social-links {
         padding: 0;
-        &__link {
-            margin-left: 0.6rem;
-            margin-right: 0.6rem;
+        &__link-with-margings {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
         &__icon {
             font-size: 2rem;
-            color: #A649A6;
+            color: @background-darkAsShit-color;
+            width: 34px;
+            text-align: center;
             &:hover {
-                color: lighten(#A649A6, 15%);
+                color: @background-darkest-color;
                 transform: scale(1.1);
             }
         }
@@ -91,15 +82,14 @@
             @media @small-devices, @extra-small-devices {
                 font-size: 1.5rem;
             }
-            
             cursor: pointer;
             transform: scaleY(1);
             transform-origin: top;
-            color: #A649A6;
+            color: @background-darkAsShit-color
         }
         &__icon:hover {
             transform: scaleY(1.2);
-            color: lighten(#A649A6, 15%);
+            color: @background-darkest-color;
         }
     }
 }
@@ -107,12 +97,34 @@
 .centered-header {
     height: 100%;
     position: relative;
+    .scroll-down-arrows {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 3rem;
+        animation: for-scroll-down-arrows 1.5s infinite;
+        animation-timing-function: linear;
+        color: @background-darkAsShit-color;
+    }
+    @keyframes for-scroll-down-arrows {
+        from {
+            bottom: 0;
+        }
+        50% {
+            bottom: 10px;
+        }
+        to {
+            bottom: 0;
+        }
+    }
 }
 
 .introduction-information {
     position: relative;
     text-align: center;
-    color: rgba(0, 0, 0, 0.904);
+    color: #333;
+    //color: rgba(0, 0, 0, 0.863);
     &__header {
         font-size: 1.5rem;
         padding-bottom: 1rem;
@@ -125,6 +137,9 @@
     }
     &__sub-header {
         padding-bottom: 1rem;
+        .free-delivery-color {
+            color: @background-darkAsShit-color;
+        }
     }
     &__button {
         padding: 0.5rem;
@@ -143,7 +158,7 @@
     width: 100vw;
     height: 100vh;
     transform: translateY(-100%);
-    transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &__group {
         max-width: 300px;
         padding: 1rem;

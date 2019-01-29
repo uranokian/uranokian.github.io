@@ -1,5 +1,5 @@
 (function() {
-
+    
     //cardsColorSettings
     const FirstColor = "transparent";
     const SecondColor = "#A649A6";
@@ -44,6 +44,7 @@
 
     //probaSettingsWithScroll
     window.onscroll = function() {
+        let navigationLogoIcon = $(".navigation-logo__icon");
         let proba = $(".proba");
         let totalScroll = $(".total-scroll");
         let nav = $(".navigation");
@@ -55,15 +56,14 @@
         //setup totalScroll width
         let widthOfTotalScroll = scroll * 100 / allHeightOfScroll;
         totalScroll.css("width", widthOfTotalScroll + "%")
-        //
+        //setup opacity scroll-down-arrows
+
         if((scroll + proba.height()) >= mainPartCoords) {
-                        
+            nav.css("font-size", "1rem");            
             proba.css("background", "#ffe2ffe5");
-            nav.css("padding", "0");
             
         } else {
-            proba.css("background", "#ffe2ff");
-            nav.css("padding", "0.5rem");
+            proba.css("background", "#ffd3ff");
         }
     }
     

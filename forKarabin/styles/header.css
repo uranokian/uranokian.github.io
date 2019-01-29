@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #ffe2ff;
+  background-color: #ffd4ff;
   transition: ease-in-out 1s;
 }
 .proba .total-scroll {
@@ -11,20 +11,8 @@
   background-color: rgba(5, 95, 95, 0.274);
   transition: linear 0.5s;
 }
-.common-button {
-  border: 3px solid black;
-  background-color: #c80000;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: 0.2s linear;
-  color: white;
-}
-.common-button:hover {
-  background-color: #ff1616;
-  color: #d9d9d9;
-}
 .top-header {
-  background: #ffe2ff;
+  background: #ffe3ff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -63,16 +51,18 @@
 .navigation .navigation-social-links {
   padding: 0;
 }
-.navigation .navigation-social-links__link {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+.navigation .navigation-social-links__link-with-margings {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .navigation .navigation-social-links__icon {
   font-size: 2rem;
-  color: #A649A6;
+  color: #ff63ff;
+  width: 34px;
+  text-align: center;
 }
 .navigation .navigation-social-links__icon:hover {
-  color: #c478c4;
+  color: #ff7dff;
   transform: scale(1.1);
 }
 .navigation .navigation-button__button {
@@ -86,7 +76,7 @@
   cursor: pointer;
   transform: scaleY(1);
   transform-origin: top;
-  color: #A649A6;
+  color: #ff63ff;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
   .navigation .navigation-button__icon {
@@ -95,16 +85,37 @@
 }
 .navigation .navigation-button__icon:hover {
   transform: scaleY(1.2);
-  color: #c478c4;
+  color: #ff7dff;
 }
 .centered-header {
   height: 100%;
   position: relative;
 }
+.centered-header .scroll-down-arrows {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3rem;
+  animation: for-scroll-down-arrows 1.5s infinite;
+  animation-timing-function: linear;
+  color: #ff63ff;
+}
+@keyframes for-scroll-down-arrows {
+  from {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  to {
+    bottom: 0;
+  }
+}
 .introduction-information {
   position: relative;
   text-align: center;
-  color: rgba(0, 0, 0, 0.904);
+  color: #333;
 }
 .introduction-information__header {
   font-size: 1.5rem;
@@ -123,6 +134,9 @@
 .introduction-information__sub-header {
   padding-bottom: 1rem;
 }
+.introduction-information__sub-header .free-delivery-color {
+  color: #ff63ff;
+}
 .introduction-information__button {
   padding: 0.5rem;
   max-width: 300px;
@@ -138,7 +152,7 @@
   width: 100vw;
   height: 100vh;
   transform: translateY(-100%);
-  transition: 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .hidden-menu__group {
   max-width: 300px;
