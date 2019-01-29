@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: rgba(3, 52, 94, 0.616);
+  background-color: rgba(252, 112, 156, 0.925);
 }
 .common-button {
   border: 3px solid black;
@@ -17,12 +17,13 @@
   color: #d9d9d9;
 }
 .top-header {
-  background: #ad9e9e url("../photos/background.jpg");
+  background: linear-gradient(to right bottom, #ffd3ee, #ad3f64), url(../photos/gh.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  background-blend-mode: overlay;
+  background-position: left center;
   height: 100vh;
+  background-blend-mode: darken;
+  position: relative;
 }
 @media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px), (min-width: 1200px) {
   .top-header {
@@ -69,6 +70,7 @@
 }
 .centered-header {
   height: 100%;
+  position: relative;
 }
 .introduction-information {
   position: relative;

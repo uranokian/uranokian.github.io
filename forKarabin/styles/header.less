@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: rgba(3, 52, 94, 0.616);
+    background-color: rgba(252, 112, 156, 0.925);
 }
 
 .common-button {
@@ -16,6 +16,7 @@
   color: white;
 }
 
+
 .common-button:hover {
     background-color: lighten(rgb(200, 0, 0), 15%);
     color: darken(white, 15%);
@@ -23,12 +24,13 @@
 
 
 .top-header {
-    background: rgb(173, 158, 158) url("../photos/background.jpg");
+    background: linear-gradient(to right bottom, #ffd3ee, #ad3f64), url(../photos/gh.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-blend-mode: overlay;
+    background-position: left center;
     height: 100vh;
+    background-blend-mode: darken;
+    position: relative;
     @media @medium-devices, @large-devices, @extra-large-devices {
         height: 100vh;
     }
@@ -77,6 +79,7 @@
 
 .centered-header {
     height: 100%;
+    position: relative;
 }
 
 .introduction-information {
