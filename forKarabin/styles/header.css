@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: rgba(252, 112, 156, 0.925);
+  background-color: transparent;
 }
 .common-button {
   border: 3px solid black;
@@ -17,7 +17,7 @@
   color: #d9d9d9;
 }
 .top-header {
-  background: linear-gradient(to right bottom, #ffd3ee, #ad3f64), url(../photos/gh.png);
+  background: #ffe2ff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -38,6 +38,11 @@
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+@media (max-width: 575.98px) {
+  .navigation .navigation-logo__icon {
+    width: 32px;
+  }
+}
 .navigation .navigation-logo__header {
   display: inline-block;
   color: white;
@@ -46,6 +51,16 @@
   .navigation .navigation-logo__header {
     font-size: 1rem;
   }
+}
+.navigation .navigation-social-links {
+  padding: 0;
+}
+.navigation .navigation-social-links__link {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.navigation .navigation-social-links__icon {
+  font-size: 2rem;
 }
 .navigation .navigation-button__button {
   padding: 0;
@@ -58,7 +73,7 @@
   cursor: pointer;
   transform: scaleY(1);
   transform-origin: top;
-  color: white;
+  color: black;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
   .navigation .navigation-button__icon {
@@ -75,9 +90,9 @@
 .introduction-information {
   position: relative;
   text-align: center;
+  color: rgba(0, 0, 0, 0.904);
 }
 .introduction-information__header {
-  color: white;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -92,7 +107,6 @@
   }
 }
 .introduction-information__sub-header {
-  color: white;
   padding-bottom: 1rem;
 }
 .introduction-information__button {
