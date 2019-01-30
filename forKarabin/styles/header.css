@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #ffd4ff;
+  background-color: #ffe3ff;
   transition: ease-in-out 1s;
 }
 .proba .total-scroll {
@@ -11,137 +11,126 @@
   background-color: rgba(5, 95, 95, 0.274);
   transition: linear 0.5s;
 }
-.top-header {
-  background: #ffe3ff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
-  height: 100vh;
-  background-blend-mode: darken;
-  position: relative;
-}
-@media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px), (min-width: 1200px) {
-  .top-header {
-    height: 100vh;
-  }
-}
-.navigation {
+.proba .navigation {
   padding: 0.5rem;
   transition: ease-in-out 1s;
 }
-.navigation .navigation-logo__icon {
+.proba .navigation .navigation-logo__icon {
   max-width: 64px;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
 @media (max-width: 575.98px) {
-  .navigation .navigation-logo__icon {
+  .proba .navigation .navigation-logo__icon {
     width: 32px;
   }
 }
-.navigation .navigation-logo__header {
+.proba .navigation .navigation-logo__header {
   display: inline-block;
   color: white;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
-  .navigation .navigation-logo__header {
+  .proba .navigation .navigation-logo__header {
     font-size: 1rem;
   }
 }
-.navigation .navigation-social-links {
+.proba .navigation .navigation-social-links {
   padding: 0;
 }
-.navigation .navigation-social-links__link-with-margings {
+.proba .navigation .navigation-social-links__link-with-margings {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.navigation .navigation-social-links__icon {
+.proba .navigation .navigation-social-links__icon {
   font-size: 2rem;
-  color: #ff63ff;
+  color: #a64aa6;
   width: 34px;
   text-align: center;
 }
-.navigation .navigation-social-links__icon:hover {
-  color: #ff7dff;
+.proba .navigation .navigation-social-links__icon:hover {
+  color: #96a64a;
   transform: scale(1.1);
 }
-.navigation .navigation-button__button {
+.proba .navigation .navigation-button__button {
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
 }
-.navigation .navigation-button__icon {
+.proba .navigation .navigation-button__icon {
   font-size: 2rem;
   cursor: pointer;
   transform: scaleY(1);
   transform-origin: top;
-  color: #ff63ff;
+  color: #a64aa6;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
-  .navigation .navigation-button__icon {
+  .proba .navigation .navigation-button__icon {
     font-size: 1.5rem;
   }
 }
-.navigation .navigation-button__icon:hover {
+.proba .navigation .navigation-button__icon:hover {
   transform: scaleY(1.2);
-  color: #ff7dff;
+  color: #96a64a;
 }
-.centered-header {
-  height: 100%;
-  position: relative;
+.header {
+  height: 100vh;
+  background-color: #ffe3ff;
+  padding-top: 10vh;
 }
-.centered-header .scroll-down-arrows {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 3rem;
-  animation: for-scroll-down-arrows 1.5s infinite;
-  animation-timing-function: linear;
-  color: #ff63ff;
-}
-@keyframes for-scroll-down-arrows {
-  from {
-    bottom: 0;
-  }
-  50% {
-    bottom: 10px;
-  }
-  to {
-    bottom: 0;
-  }
-}
-.introduction-information {
-  position: relative;
+.header .header-main-title,
+.header .header-sub-title {
   text-align: center;
-  color: #333;
 }
-.introduction-information__header {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+.header .header-main-title {
+  font-weight: 800;
+}
+.header .header-sub-title {
+  font-weight: 600;
+}
+.header .underline-decoration-line {
+  border-bottom: dashed 2px black;
+}
+.header .underline-decoration-rhomb {
+  border-bottom: dashed 2px black;
+}
+.header .our-advanteges-block__logo {
+  width: 64px;
+  height: 64px;
+  background-color: #ffe3ff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .introduction-information__header {
-    font-size: 2.5rem;
+  .header .our-advanteges-block__logo {
+    width: 78px;
+    height: 78px;
   }
 }
 @media (min-width: 1200px) {
-  .introduction-information__header {
-    font-size: 3rem;
+  .header .our-advanteges-block__logo {
+    width: 90px;
+    height: 90px;
   }
 }
-.introduction-information__sub-header {
-  padding-bottom: 1rem;
+.header .our-advanteges-block__icon {
+  font-size: 1.3rem;
 }
-.introduction-information__sub-header .free-delivery-color {
-  color: #ff63ff;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header .our-advanteges-block__icon {
+    font-size: 1.8rem;
+  }
 }
-.introduction-information__button {
-  padding: 0.5rem;
-  max-width: 300px;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+@media (min-width: 1200px) {
+  .header .our-advanteges-block__icon {
+    font-size: 2.2rem;
+  }
+}
+.header .our-advanteges-block__title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .hidden-menu {
   z-index: 6;
@@ -197,4 +186,5 @@
 .hidden-menu .close-button__icon {
   cursor: pointer;
   font-size: 3rem;
+  color: whitesmoke;
 }

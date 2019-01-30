@@ -1,34 +1,43 @@
 (function() {
-    
+    /*colors
+        @backrgound-main-color: #ffe3ff;
+        @background-hover-color: #96A64A;
+        @background-darkAsShit-color: #A64AA6;
+        @background-card-color: #FAFFE3;
+    */
+
     //cardsColorSettings
-    const FirstColor = "transparent";
-    const SecondColor = "#A649A6";
+    const FirstColorTransparent = "transparent";
+    const SecondColor = "#A64AA6";
+    const HoverColor = "#96A64A";
     const buyButton = $(".card-wrapper__buy-button");
     $('.card-wrapper').hover(
         function() {
             $(this).find(".card-wrapper__buy-button").css({
-                "background-color": "#FFE9FF",
+                "background-color": SecondColor,
+                "color": "white"
                 
             });
         },
         function() {
             $(this).find(".card-wrapper__buy-button").css({
-                "background-color": FirstColor,
+                "background-color": FirstColorTransparent,
+                "color": "#2b211f"
                 
             });
         });
     buyButton.hover(
         function() {
             $(this).css({
-                "background-color": SecondColor,
-                "color": "white"
+                "background-color": HoverColor,
+                "color": "black"
             });
             
         },
         function() {
             $(this).css({
-                "background-color": "#FFE9FF",
-                "color": "black"
+                "background-color": SecondColor,
+                "color": "white"
             });
         }
     );
@@ -63,7 +72,7 @@
             proba.css("background", "#ffe2ffe5");
             
         } else {
-            proba.css("background", "#ffd3ff");
+            proba.css("background", "#ffe3ff");
         }
     }
     

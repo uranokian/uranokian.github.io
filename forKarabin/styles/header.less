@@ -1,16 +1,15 @@
 @import "responsive.less";
 
 @backrgound-main-color: #ffe3ff;
-@background-darken-color: darken(#ffe3ff, 3%);
-@background-darkest-color: darken(#ffe3ff, 20%);
-@background-darkAsShit-color: darken(#ffe3ff, 25%);
+@background-hover-color: #96A64A;
+@background-darkAsShit-color: #A64AA6;
 
-
+//navbar
 .proba {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: @background-darken-color;
+    background-color: @backrgound-main-color;
     transition: ease-in-out 1s;
     .total-scroll {
         width: 0;
@@ -18,137 +17,126 @@
         background-color: rgba(5, 95, 95, 0.274);
         transition: linear 0.5s;
     }
-}
-
-.top-header {
-    background: @backrgound-main-color;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 100vh;
-    background-blend-mode: darken;
-    position: relative;
-    @media @medium-devices, @large-devices, @extra-large-devices {
-        height: 100vh;
-    }
-}
-
-.navigation {
-    padding: 0.5rem;
-    transition: ease-in-out 1s;
-    .navigation-logo {
-        &__icon {
-            max-width: 64px;
-            border-radius: 50%;
-            margin-right: 0.5rem;
-            @media @extra-small-devices {
-                width: 32px;
-            }
-        }
-        &__header {
-            display: inline-block;
-            color: white;
-            @media @small-devices, @extra-small-devices {
-                font-size: 1rem;
-            }
-        }
-    }
-    .navigation-social-links {
-        padding: 0;
-        &__link-with-margings {
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-        &__icon {
-            font-size: 2rem;
-            color: @background-darkAsShit-color;
-            width: 34px;
-            text-align: center;
-            &:hover {
-                color: @background-darkest-color;
-                transform: scale(1.1);
-            }
-        }
-    }
-    .navigation-button {
-        &__button {
-            padding: 0;
-            margin: 0;
-            border: 0;
-            background-color: transparent;
-        }
-        &__icon {
-            font-size: 2rem;
-            @media @small-devices, @extra-small-devices {
-                font-size: 1.5rem;
-            }
-            cursor: pointer;
-            transform: scaleY(1);
-            transform-origin: top;
-            color: @background-darkAsShit-color
-        }
-        &__icon:hover {
-            transform: scaleY(1.2);
-            color: @background-darkest-color;
-        }
-    }
-}
-
-.centered-header {
-    height: 100%;
-    position: relative;
-    .scroll-down-arrows {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 3rem;
-        animation: for-scroll-down-arrows 1.5s infinite;
-        animation-timing-function: linear;
-        color: @background-darkAsShit-color;
-    }
-    @keyframes for-scroll-down-arrows {
-        from {
-            bottom: 0;
-        }
-        50% {
-            bottom: 10px;
-        }
-        to {
-            bottom: 0;
-        }
-    }
-}
-
-.introduction-information {
-    position: relative;
-    text-align: center;
-    color: #333;
-    //color: rgba(0, 0, 0, 0.863);
-    &__header {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        @media @large-devices {
-            font-size: 2.5rem;
-        }
-        @media @extra-large-devices {
-            font-size: 3rem;
-        }
-    }
-    &__sub-header {
-        padding-bottom: 1rem;
-        .free-delivery-color {
-            color: @background-darkAsShit-color;
-        }
-    }
-    &__button {
+    .navigation {
         padding: 0.5rem;
-        max-width: 300px;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+        transition: ease-in-out 1s;
+        .navigation-logo {
+            &__icon {
+                max-width: 64px;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+                @media @extra-small-devices {
+                    width: 32px;
+                }
+            }
+            &__header {
+                display: inline-block;
+                color: white;
+                @media @small-devices, @extra-small-devices {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .navigation-social-links {
+            padding: 0;
+            &__link-with-margings {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            &__icon {
+                font-size: 2rem;
+                color: @background-darkAsShit-color;
+                width: 34px;
+                text-align: center;
+                &:hover {
+                    color: @background-hover-color;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .navigation-button {
+            &__button {
+                padding: 0;
+                margin: 0;
+                border: 0;
+                background-color: transparent;
+            }
+            &__icon {
+                font-size: 2rem;
+                @media @small-devices, @extra-small-devices {
+                    font-size: 1.5rem;
+                }
+                cursor: pointer;
+                transform: scaleY(1);
+                transform-origin: top;
+                color: @background-darkAsShit-color
+            }
+            &__icon:hover {
+                transform: scaleY(1.2);
+                color: @background-hover-color;
+            }
+        }
     }
 }
 
+//header
+.header {
+    height: 100vh;
+    background-color: @backrgound-main-color;
+    padding-top: 10vh;
+    .header-main-title, .header-sub-title {
+        text-align: center;
+        
+    }
+    .header-main-title {
+        font-weight: 800;
+    }
+    .header-sub-title {
+        font-weight: 600;
+    }
+
+    .underline-decoration-line {
+        border-bottom: dashed 2px black;
+    }
+    .underline-decoration-rhomb {
+        
+        border-bottom: dashed 2px black;
+    }
+    .our-advanteges-block {
+        &__logo {
+            width: 64px;
+            height: 64px;
+            background-color: @backrgound-main-color;
+            border-radius: 50%;
+            -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+            -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+            @media @large-devices {
+                width: 78px;
+                height: 78px;
+            }
+            @media @extra-large-devices {
+                width: 90px;
+                height: 90px;
+            }
+        }
+        &__icon {
+            font-size: 1.3rem;
+            @media @large-devices {
+                font-size: 1.8rem;
+            }
+            @media @extra-large-devices {
+                font-size: 2.2rem;
+            }
+        }
+        &__title {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+//hidden-menu
 .hidden-menu {
     z-index: 6;
     position: fixed;
@@ -197,6 +185,7 @@
         &__icon {
             cursor: pointer;
             font-size: 3rem;
+            color: whitesmoke;
         }
     }
 }
