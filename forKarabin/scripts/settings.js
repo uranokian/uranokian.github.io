@@ -1,6 +1,7 @@
 (function() {
     /*colors
         @backrgound-main-color: #ffe3ff;
+        @backrgound-navigation-color: #ffd4ff;
         @background-hover-color: #96A64A;
         @background-darkAsShit-color: #A64AA6;
         @background-card-color: #FAFFE3;
@@ -16,14 +17,12 @@
             $(this).find(".card-wrapper__buy-button").css({
                 "background-color": SecondColor,
                 "color": "white"
-                
             });
         },
         function() {
             $(this).find(".card-wrapper__buy-button").css({
                 "background-color": FirstColorTransparent,
                 "color": "#2b211f"
-                
             });
         });
     buyButton.hover(
@@ -32,7 +31,6 @@
                 "background-color": HoverColor,
                 "color": "black"
             });
-            
         },
         function() {
             $(this).css({
@@ -53,7 +51,6 @@
 
     //probaSettingsWithScroll
     window.onscroll = function() {
-        let navigationLogoIcon = $(".navigation-logo__icon");
         let proba = $(".proba");
         let totalScroll = $(".total-scroll");
         let nav = $(".navigation");
@@ -66,13 +63,10 @@
         let widthOfTotalScroll = scroll * 100 / allHeightOfScroll;
         totalScroll.css("width", widthOfTotalScroll + "%")
         //setup opacity scroll-down-arrows
-
-        if((scroll + proba.height()) >= mainPartCoords) {
-            nav.css("font-size", "1rem");            
-            proba.css("background", "#ffe2ffe5");
-            
+        if((scroll + proba.height()) >= mainPartCoords) {            
+            proba.css("background", "#ffd4ffb0");
         } else {
-            proba.css("background", "#ffe3ff");
+            proba.css("background", "#ffd4ff");
         }
     }
     

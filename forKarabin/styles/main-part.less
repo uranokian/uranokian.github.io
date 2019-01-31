@@ -4,26 +4,55 @@
 @background-hover-color: #96A64A;
 @background-darkAsShit-color: #A64AA6;
 @background-card-color: #FAFFE3;
+@background-main-part-color: #FCFFF0;
 
 .main-part {
-    background-color: #FCFFF0;
+    background: @background-main-part-color;
+}
+
+
+.our-advanteges-block {
+    
+    &__logo {
+        width: 64px;
+        height: 64px;
+        background-color: @background-main-part-color;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.8);
+        @media @large-devices {
+            width: 78px;
+            height: 78px;
+        }
+        @media @extra-large-devices {
+            width: 90px;
+            height: 90px;
+        }
+    }
+    &__icon {
+        font-size: 1.3rem;
+        @media @large-devices {
+            font-size: 1.8rem;
+        }
+        @media @extra-large-devices {
+            font-size: 2.2rem;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
 }
 
 .main-part-title-wrapper {
     &__top-title {
         text-align: center;
         margin-top: 4rem;
+        margin-bottom: 4rem;
         font-size: 2.5rem;
         @media @extra-small-devices {
             font-size: 2rem;
-        }
-    }
-    &__bottom-title {
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        @media @extra-small-devices {
-            margin-bottom: 1.5rem;
         }
     }
 }
