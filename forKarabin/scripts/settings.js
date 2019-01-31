@@ -69,5 +69,27 @@
             proba.css("background", "#ffd4ff");
         }
     }
+
+    //button-oc settings
+    let buttonOC = $(".title-wrapper-of-cards-chapters-name__button-oc");
+    function addClass(what) {
+        $(what).toggleClass("title-wrapper-of-cards-chapters-name_button-ocbutton-oc-clicked");
+    }
+    
+    function slide(whatClass) {
+        $(whatClass).slideToggle(1000);
+    }
+
+    buttonOC.click(function(){
+        if($(this).hasClass("dc")) {
+            slide(".dc-part");
+            addClass(this);
+        }
+        if($(this).hasClass("marvel")) {
+            slide(".marvel-part");
+            addClass(this);
+        }
+    })
+
     
 })();
