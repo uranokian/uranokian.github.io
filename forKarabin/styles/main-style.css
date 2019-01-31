@@ -6,4 +6,5 @@
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     letter-spacing: 2px;
     color: #2b211f;
+    scroll-behavior: smooth;
 }

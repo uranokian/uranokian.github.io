@@ -77,7 +77,6 @@
   height: 100vh;
   background-color: #ffe3ff;
   padding-top: 10vh;
-  border-bottom: dashed 2px black;
 }
 .header .header-main-title,
 .header .header-sub-title {

@@ -79,11 +79,9 @@
 <!--Hidden menu --> 
 <nav class="hidden-menu">
     <ul class="hidden-menu__group">
-        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">First</a></li>
-        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Second</a></li>
-        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Third</a></li>
-        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Fourth</a></li>
-        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Fifth</a></li>
+        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#dc">DC</a></li>
+        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#marvel">Marvel</a></li>
+        <li class="hidden-menu__item"><a class="hidden-menu__link" href="#star-wars">Star Wars</a></li>
     </ul>
     <div class="close-button">
         <i class="far fa-times-circle close-button__icon"></i>
@@ -92,40 +90,44 @@
 
 <!--Main part -->
 
+<div class="container-fluid">
+    <div class="row pt-2 pt-md-5 pb-2 pb-md-5 our-advanteges-section">
+        <div class="col-12 col-sm-12 col-md-4 our-advanteges-block p-5">
+            <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-truck our-advanteges-block__icon"></i></div>
+            <div class="our-advanteges-block__title mt-2 mt-md-3 mt-lg-4"><h3 class="our-advanteges-block__title">Free-доставка від 2 постерів</h3></div>
+            <div class="our-advanteges-block__text"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 our-advanteges-block our-advanteges-block_with-borders p-5">
+            <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-mobile-alt our-advanteges-block__icon"></i></div>
+            <div class="our-advanteges-block__title mt-2 mt-md-3 mt-lg-4 "><h3 class="our-advanteges-block__title">Зв’язок у Direct / Telegram</h3></div>
+            <div class="our-advanteges-block__text"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 our-advanteges-block p-5">
+            <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-archive our-advanteges-block__icon"></i></div>
+            <div class="mt-2 mt-md-3 mt-lg-4"><h3 class="our-advanteges-block__title">Роботи на замовлення</h3></div>
+            <div class="our-advanteges-block__text"></div>
+        </div>
+    </div>
+</div>
+
 <main class="main-part pt-2">
     <div class="container pt-5 ">
-        <div class="row pt-2 pt-md-5 pb-2 pb-md-5 our-advanteges-section">
-            <div class="col-12 col-sm-12 col-md-4 our-advanteges-block p-3">
-                <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-truck our-advanteges-block__icon"></i></div>
-                <div class="our-advanteges-block__title mt-2 mt-md-3 mt-lg-4"><h3 class="our-advanteges-block__title">Free-доставка від 2 постерів</h3></div>
-                <div class="our-advanteges-block__text"></div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 our-advanteges-block our-advanteges-block_with-borders p-3">
-                <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-mobile-alt our-advanteges-block__icon"></i></div>
-                <div class="our-advanteges-block__title mt-2 mt-md-3 mt-lg-4 "><h3 class="our-advanteges-block__title">Зв’язок у Direct / Telegram</h3></div>
-                <div class="our-advanteges-block__text"></div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 our-advanteges-block p-3">
-                <div class="our-advanteges-block__logo  d-flex mx-auto justify-content-center align-items-center"><i class="fas fa-archive our-advanteges-block__icon"></i></div>
-                <div class="mt-2 mt-md-3 mt-lg-4"><h3 class="our-advanteges-block__title">Роботи на замовлення</h3></div>
-                <div class="our-advanteges-block__text"></div>
-            </div>
-            <div class="col-12 d-flex justify-content-center align-items-center decoration-section-wafels pt-5 mt-5">
-                
-                <i class="far fa-star decoration-section-wafels__wafel"></i>
-                <i class="far fa-star decoration-section-wafels__wafel"></i>
-                <i class="far fa-star decoration-section-wafels__wafel"></i>
-                
-            </div>
-        </div>
-        <div class="main-part-title-wrapper mt-5 mb-5 pb-5 row">
+        <!--header-section-->
+        <div class="main-part-title-wrapper mt-5 mb-5 row">
             <h2 class="col-12 main-part-title-wrapper__top-title">Постери і плакати для кожного!</h2>
         </div>
+        <!--decoration-section-->
+        <div class="col-12 d-flex justify-content-center align-items-center decoration-section-wafels pt-5 pb-5 mb-5">
+                <div class="decoration-section-wafels__line-left"></div>
+                <i class="fas fa-star decoration-section-wafels__wafel"></i>
+                <i class="fas fa-star decoration-section-wafels__wafel"></i>
+                <i class="fas fa-star decoration-section-wafels__wafel"></i>
+                <div class="decoration-section-wafels__line-right"></div>
+        </div>
         <!--dc-section-->
-        <div class="title-wrapper-of-cards-chapters-name row mb-4 d-flex align-items-center">
+        <div id="dc" class="title-wrapper-of-cards-chapters-name row mb-4 d-flex align-items-center">
             <img class="col-auto mx-auto cards-chapters-logo" src="images/DC_Comics_logo.png" alt="">
         </div>
-        
         <div class="row card-part dc-part">
             <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card-wrapper">
@@ -224,8 +226,8 @@
             </div>
             </div>
         </div>
-        <!--marvel-part-->
-        <div class="title-wrapper-of-cards-chapters-name row mb-4 mt-4 d-flex align-items-center">
+        <!--marvel-section-->
+        <div id="marvel" class="title-wrapper-of-cards-chapters-name row mb-4 mt-4 d-flex align-items-center">
             <img class="col-auto mx-auto cards-chapters-logo" src="images/marvel.png" alt="">
         </div>
 
@@ -358,10 +360,335 @@
                 </div>
             </div>
             </div>
-            
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/9.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/10.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/11.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/12.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/13.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/14.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/15.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/16.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/17.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/18.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/19.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/20.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/21.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/22.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper  ">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/marvel/23.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
         </div>
 
+        <!--star wars section-->
+        <div id="star-wars" class="title-wrapper-of-cards-chapters-name row mb-4 mt-4 d-flex align-items-center">
+            <img class="col-auto mx-auto cards-chapters-logo" src="images/star-wars.png" alt="">
+        </div>
 
+        <div class="row card-part star-wars-part">
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/star_wars/1.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/star_wars/2.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/star_wars/3.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/star_wars/4.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-wrapper__photo-wrapper">
+                    <img class="card-wrapper__photo" src="images/star_wars/5.jpg" alt="">
+                </div>
+                <div class="card-wrapper__title-wrapper">
+                    <h4 class="card-wrapper__title">Халк</h4>
+                </div>
+                <div class="card-wrapper__text-wrapper"><p class="card-wrapper__text">300х400 та 210х300 в рамці, під склом</p></div>
+                <div class="card-wrapper__lighter-block">
+                    <button class="card-wrapper__buy-button">
+                        Замовити!
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </main>
 <script src="scripts/openMenuButton.js"></script>

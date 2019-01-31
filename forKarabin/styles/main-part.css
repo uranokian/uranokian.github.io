@@ -5,6 +5,7 @@
   font-size: 1.1rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  color: #2b211f;
 }
 .decoration-section-wafels__line-left,
 .decoration-section-wafels__line-right {
@@ -12,15 +13,17 @@
   width: 15%;
   background-color: #2b211f;
 }
+.our-advanteges-section {
+  background-color: #FFE3EB;
+}
 .our-advanteges-block__logo {
   width: 64px;
   height: 64px;
-  background-color: #fcfff0;
   border-radius: 50%;
   -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
-  border: 2px solid rgba(0, 0, 0, 0.479);
+  border: 3px solid #2b211f;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .our-advanteges-block__logo {
@@ -36,6 +39,7 @@
 }
 .our-advanteges-block__icon {
   font-size: 1.3rem;
+  color: #2b211f;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .our-advanteges-block__icon {
@@ -51,6 +55,7 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
+  color: #2b211f;
 }
 .main-part-title-wrapper__top-title {
   text-align: center;
@@ -65,12 +70,12 @@
 }
 .title-wrapper-of-cards-chapters-name {
   border-radius: 4px;
-  background-color: #a64aa6;
+  background: #a64aa6;
   -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
   padding: 0.5rem;
-  border: 2px solid rgba(0, 0, 0, 0.404);
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 .title-wrapper-of-cards-chapters-name__button-oc {
   font-size: 2rem;
@@ -101,7 +106,7 @@
   box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
   border-radius: 4px;
   transition: ease-in-out 0.2s;
-  border: 2px solid rgba(0, 0, 0, 0.479);
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 .card-wrapper__photo {
   min-width: 180px;
@@ -109,7 +114,7 @@
   width: 100%;
   display: block;
   padding-bottom: 1rem;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .card-wrapper__title {
   text-align: center;
