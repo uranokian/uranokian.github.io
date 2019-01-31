@@ -1,13 +1,16 @@
 @import "responsive.less";
 
-@backrgound-main-color: #ffe3ff;
-@background-hover-color: #96A64A;
-@background-darkAsShit-color: #A64AA6;
-@background-card-color: #FAFFE3;
-@background-main-part-color: #FCFFF0;
+@primaryColor: #f8bbd0;
+@primaryLightColor: #ffeeff;
+@primaryDarkColor: #c48b9f;
+@secondaryColor: #5e35b1;
+@secondaryLightColor: #9162e4;
+@secondaryDarkColor: #280680;
+@primaryTextColor: #000000;
+@secondaryTextColor: #ffffff;
 
 .main-part {
-    background: @background-main-part-color;
+    background-color: @primaryLightColor;
 }
 
 .decoration-section-wafels {
@@ -15,17 +18,17 @@
         font-size: 1.1rem;
         margin-left: 2rem;
         margin-right: 2rem;
-        color: #2b211f;
+        color: @primaryTextColor;
     }
     &__line-left, &__line-right {
         height: 2px;
         width: 15%;
-        background-color: #2b211f;
+        background-color: @primaryTextColor;
     }
 }
 
 .our-advanteges-section {
-    background-color: #FFE3EB;
+    background-color: @primaryColor;
 }
 
 .our-advanteges-block {
@@ -33,10 +36,8 @@
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-        -moz-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-        box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
-        border: 3px solid #2b211f;
+        background-color: @secondaryDarkColor;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         @media @large-devices {
             width: 78px;
             height: 78px;
@@ -48,7 +49,7 @@
     }
     &__icon {
         font-size: 1.3rem;
-        color: #2b211f;
+        color: @secondaryTextColor;
         @media @large-devices {
             font-size: 1.8rem;
         }
@@ -60,7 +61,7 @@
         text-align: center;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 1px;
-        color: #2b211f;
+        color: @primaryTextColor;
     }
 }
 
@@ -77,30 +78,13 @@
 }
 
 .title-wrapper-of-cards-chapters-name {
-    border-radius: 4px;
-    background: @background-darkAsShit-color;
-    -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-    -moz-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
-    padding: 0.5rem;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    &__button-oc {
-        font-size: 2rem;
-        cursor: pointer;
-        transition: 0.5s linear;
-    }
-    &_button-ocbutton-oc-clicked {
-        transform: rotate(180deg);
-    }
-    .title-of-cards-chapters {
-        text-align: left;
-        font-weight: 600;
-        font-size: 1.5rem;
-        padding-left: 0;
-        color: whitesmoke;
-    }
-    .cards-chapters-logo {
-        max-height: 80px;
+    border-radius: 3px;
+    background: @secondaryColor;
+    padding: 1.4rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    &__title {
+        font-size: 1.9rem;
+        color: @secondaryTextColor;
     }
 }
 
@@ -110,20 +94,19 @@
 
 .card-wrapper {
     padding: 0;
-    background-color: @background-card-color;
-    -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-    -moz-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.68);
-    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.411);
-    border-radius: 4px;
-    transition: ease-in-out 0.2s;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: @primaryColor;
     &__photo {
         min-width: 180px;
         height: auto;
         width: 100%;
         display: block;
-        padding-bottom: 1rem;
-        border-radius: 2px;
+        margin-bottom: 1rem;
+        border-radius: 2px 2px 0 0;
+        border-bottom: 5px solid @primaryDarkColor;
+        
     }
     &__title {
         text-align: center;
@@ -131,20 +114,21 @@
         padding-bottom: 0.5rem;
         font-weight: 600;
         font-size: 1.5rem;
+        color: @primaryTextColor;
     }
     &__text {
         text-align: center;
         padding: 0.5rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
+        color: @primaryTextColor;
     }
     &__lighter-block {
         text-align: center;
         font-size: 1.1rem;
         padding: 1rem;
-        border-radius: 0 0 4px 4px;
+        border-radius: 0 0 3px 3px;
         transition: ease-in-out 0.2s;
-        color: white;
     }
     &__buy-button {
         text-align: center;
@@ -153,15 +137,16 @@
         background-color: transparent;
         transition: ease-in-out 0.2s;
         cursor: pointer;
-        border: 2px solid rgba(0, 0, 0, 0.308);
+        border: 2px solid @primaryDarkColor;
         font-weight: bold;
-        border-radius: 4px;
+        border-radius: 3px;
+        color: @primaryTextColor;
         &:hover {
             background-color: #072a16;
         }
     }
     &:hover {
-        transform: scale(1.02);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     @media @extra-small-devices {
         &:hover {

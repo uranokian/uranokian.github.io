@@ -1,41 +1,41 @@
 (function() {
     /*colors
-        @backrgound-main-color: #ffe3ff;
-        @backrgound-navigation-color: #ffd4ff;
-        @background-hover-color: #96A64A;
-        @background-darkAsShit-color: #A64AA6;
-        @background-card-color: #FAFFE3;
+        @primaryColor:          #f8bbd0;
+        @primaryLightColor:     #ffeeff;
+        @primaryDarkColor:      #c48b9f;
+        @secondaryColor:        #5e35b1;
+        @secondaryLightColor:   #9162e4;
+        @secondaryDarkColor:    #280680;
+        @primaryTextColor:      #000000;
+        @secondaryTextColor:    #ffffff;
     */
 
     //cardsColorSettings
-    const FirstColorTransparent = "transparent";
-    const SecondColor = "#A64AA6";
-    const HoverColor = "#96A64A";
     const buyButton = $(".card-wrapper__buy-button");
     $('.card-wrapper').hover(
         function() {
             $(this).find(".card-wrapper__buy-button").css({
-                "background-color": SecondColor,
-                "color": "white"
+                "background-color": "#c48b9f",
             });
         },
         function() {
             $(this).find(".card-wrapper__buy-button").css({
-                "background-color": FirstColorTransparent,
-                "color": "#2b211f"
+                "background-color": "#f8bbd0",
             });
         });
     buyButton.hover(
         function() {
             $(this).css({
-                "background-color": HoverColor,
-                "color": "black"
+                "background-color": "#280680",
+                "color": "#ffffff",
+                "border": "#280680 2px solid"
             });
         },
         function() {
             $(this).css({
-                "background-color": SecondColor,
-                "color": "white"
+                "background-color": "#c48b9f",
+                "color": "#000000",
+                "border": "#c48b9f 2px solid"
             });
         }
     );
@@ -49,37 +49,15 @@
         }
     });
 
-    //probaSettingsWithScroll
-    window.onscroll = function() {
-        let proba = $(".proba");
-        let totalScroll = $(".total-scroll");
-        let nav = $(".navigation");
-        let mainPartCoords = $(".main-part").offset().top; //mainPartCoordinates
-        let scroll = this.window.pageYOffset; //scroll Height
-        let windowHeight = $(window).height(); // windowHeight
-        let documentHeight = $(document).height(); //documentHeight
-        let allHeightOfScroll = documentHeight - windowHeight; //100% scroll
-        //setup totalScroll width
-        let widthOfTotalScroll = scroll * 100 / allHeightOfScroll;
-        totalScroll.css("width", widthOfTotalScroll + "%")
-        //setup opacity scroll-down-arrows
-        if((scroll + proba.height()) >= mainPartCoords) {            
-            proba.css("background", "#ffd4ffb0");
-        } else {
-            proba.css("background", "#ffd4ff");
-        }
-    }
-
     //button-oc settings
     let buttonOC = $(".title-wrapper-of-cards-chapters-name__button-oc");
     function addClass(what) {
         $(what).toggleClass("title-wrapper-of-cards-chapters-name_button-ocbutton-oc-clicked");
     }
-    
+
     function slide(whatClass) {
         $(whatClass).slideToggle(1000);
     }
-
     buttonOC.click(function(){
         if($(this).hasClass("dc")) {
             slide(".dc-part");
@@ -90,6 +68,9 @@
             addClass(this);
         }
     })
+
+    //scrollToSections
+
 
     
 })();

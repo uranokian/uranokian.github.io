@@ -1,17 +1,22 @@
 @import "responsive.less";
 
-@backrgound-header-color: #ffe3ff;
-@backrgound-navigation-color: #ffd4ff;
-@background-hover-color: #96A64A;
-@background-darkAsShit-color: #A64AA6;
+@primaryColor: #f8bbd0;
+@primaryLightColor: #ffeeff;
+@primaryDarkColor: #c48b9f;
+@secondaryColor: #5e35b1;
+@secondaryLightColor: #9162e4;
+@secondaryDarkColor: #280680;
+@primaryTextColor: #000000;
+@secondaryTextColor: #ffffff;
 
 //navbar
 .proba {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: @backrgound-navigation-color;
+    background-color: @primaryColor;
     transition: ease-in-out 1s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     .total-scroll {
         width: 0;
         height: 4px;
@@ -19,16 +24,13 @@
         transition: linear 0.5s;
     }
     .navigation {
-        padding: 0.5rem;
+        padding: 0.8rem;
         transition: ease-in-out 1s;
         .navigation-logo {
             &__icon {
-                max-width: 64px;
+                max-width: 40px;
                 border-radius: 50%;
                 margin-right: 0.5rem;
-                @media @extra-small-devices {
-                    width: 32px;
-                }
             }
             &__header {
                 display: inline-block;
@@ -46,12 +48,11 @@
             }
             &__icon {
                 font-size: 2rem;
-                color: @background-darkAsShit-color;
+                color: @primaryTextColor;
                 width: 34px;
                 text-align: center;
                 &:hover {
-                    color: @background-hover-color;
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
             }
         }
@@ -70,11 +71,10 @@
                 cursor: pointer;
                 transform: scaleY(1);
                 transform-origin: top;
-                color: @background-darkAsShit-color
+                color: @primaryTextColor;
             }
             &__icon:hover {
                 transform: scaleY(1.2);
-                color: @background-hover-color;
             }
         }
     }
@@ -83,12 +83,11 @@
 //header
 .header {
     height: 100vh;
-    background-color: @backrgound-header-color;
+    background-color: @primaryLightColor;
     padding-top: 10vh;
     
     .header-main-title, .header-sub-title {
         text-align: center;
-        
     }
     .header-main-title {
         font-weight: 400;
@@ -103,11 +102,11 @@
     }
 
     .underline-decoration-line {
-        border-bottom: dashed 2px black;
+        border-bottom: dashed 3px @primaryTextColor;
     }
     .underline-decoration-rhomb {
         
-        border-bottom: dashed 2px black;
+        border-bottom: dashed 3px @primaryTextColor;
     }
 }
 

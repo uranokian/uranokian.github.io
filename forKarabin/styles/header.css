@@ -2,8 +2,9 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #ffd4ff;
+  background-color: #f8bbd0;
   transition: ease-in-out 1s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .proba .total-scroll {
   width: 0;
@@ -12,18 +13,13 @@
   transition: linear 0.5s;
 }
 .proba .navigation {
-  padding: 0.5rem;
+  padding: 0.8rem;
   transition: ease-in-out 1s;
 }
 .proba .navigation .navigation-logo__icon {
-  max-width: 64px;
+  max-width: 40px;
   border-radius: 50%;
   margin-right: 0.5rem;
-}
-@media (max-width: 575.98px) {
-  .proba .navigation .navigation-logo__icon {
-    width: 32px;
-  }
 }
 .proba .navigation .navigation-logo__header {
   display: inline-block;
@@ -43,13 +39,12 @@
 }
 .proba .navigation .navigation-social-links__icon {
   font-size: 2rem;
-  color: #a64aa6;
+  color: #000000;
   width: 34px;
   text-align: center;
 }
 .proba .navigation .navigation-social-links__icon:hover {
-  color: #96a64a;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .proba .navigation .navigation-button__button {
   padding: 0;
@@ -62,7 +57,7 @@
   cursor: pointer;
   transform: scaleY(1);
   transform-origin: top;
-  color: #a64aa6;
+  color: #000000;
 }
 @media (min-width: 576px) and (max-width: 767.98px), (max-width: 575.98px) {
   .proba .navigation .navigation-button__icon {
@@ -71,11 +66,10 @@
 }
 .proba .navigation .navigation-button__icon:hover {
   transform: scaleY(1.2);
-  color: #96a64a;
 }
 .header {
   height: 100vh;
-  background-color: #ffe3ff;
+  background-color: #ffeeff;
   padding-top: 10vh;
 }
 .header .header-main-title,
@@ -96,10 +90,10 @@
   font-weight: 700;
 }
 .header .underline-decoration-line {
-  border-bottom: dashed 2px black;
+  border-bottom: dashed 3px #000000;
 }
 .header .underline-decoration-rhomb {
-  border-bottom: dashed 2px black;
+  border-bottom: dashed 3px #000000;
 }
 .hidden-menu {
   z-index: 6;
