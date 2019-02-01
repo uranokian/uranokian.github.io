@@ -1,10 +1,10 @@
 .proba {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #f8bbd0;
   transition: ease-in-out 1s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .proba .total-scroll {
   width: 0;
@@ -100,7 +100,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #252525f1;
+  background-color: #ffeeff;
   width: 100vw;
   height: 100vh;
   transform: translateY(-100%);
@@ -116,14 +116,14 @@
   transform: translate(-50%, -50%);
 }
 .hidden-menu__item {
-  color: white;
+  color: #000000;
   text-align: center;
   margin-top: 1rem;
 }
 .hidden-menu__link {
   font-size: 2.5rem;
   text-decoration: none;
-  color: white;
+  color: #000000;
   transition: 0.1s linear;
 }
 @media (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px) {
@@ -137,17 +137,17 @@
   }
 }
 .hidden-menu__link:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #000000;
 }
 .hidden-menu .close-button {
   position: absolute;
   font-size: 3rem;
   right: 2rem;
   top: 2rem;
-  color: white;
+  color: #000000;
 }
 .hidden-menu .close-button__icon {
   cursor: pointer;
   font-size: 3rem;
-  color: whitesmoke;
+  color: #000000;
 }
