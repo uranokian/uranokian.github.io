@@ -25,7 +25,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #280680;
+  background-color: #5e35b1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -41,6 +41,7 @@
   }
 }
 .our-advanteges-block__icon {
+  padding-left: 2.5px;
   font-size: 1.3rem;
   color: #ffffff;
 }
@@ -73,7 +74,7 @@
 }
 .title-wrapper-of-cards-chapters-name {
   border-radius: 3px;
-  background: #5e35b1;
+  background: #280680;
   padding: 1.4rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

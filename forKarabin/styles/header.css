@@ -77,7 +77,7 @@
   text-align: center;
 }
 .header .header-main-title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 5rem;
   letter-spacing: 4px;
 }
@@ -87,20 +87,21 @@
   }
 }
 .header .header-sub-title {
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1.9rem;
 }
 .header .underline-decoration-line {
-  border-bottom: dashed 3px #000000;
+  border-bottom: dashed 2px #000000;
 }
 .header .underline-decoration-rhomb {
-  border-bottom: dashed 3px #000000;
+  border-bottom: dashed 2px #000000;
 }
 .hidden-menu {
   z-index: 6;
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #ffeeff;
+  background-color: #c48b9f;
   width: 100vw;
   height: 100vh;
   transform: translateY(-100%);
