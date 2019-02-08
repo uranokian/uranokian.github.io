@@ -169,10 +169,27 @@
 }
 .photo-buttons-wrapper {
   position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
 }
 .photo-buttons-wrapper__first-button,
 .photo-buttons-wrapper__second-button {
-  background: black;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 2px solid #280680;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+.photo-buttons-wrapper__first-button:hover,
+.photo-buttons-wrapper__second-button:hover {
+  background: #f8bbd0;
+}
+.photo-buttons-wrapper__first-button {
+  margin-right: 0.5rem;
+}
+.photo-buttons-wrapper .checked {
+  background-color: #5e35b1;
 }

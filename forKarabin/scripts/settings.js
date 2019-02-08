@@ -10,7 +10,7 @@
         @secondaryTextColor:    #ffffff;
     */
     let stop1 = null;
-    const buyButton = $(".card-wrapper__buy-button");
+
     const hiddenMenu = $(".hidden-menu");
     let ourAdvantagesStart = $(".header-main-title-wrapper").offset().top;
 
@@ -20,6 +20,7 @@
     PHOTO_LOADING.photoLoading("star_wars", ".star-wars-part", MODULE_STAR__WARS.arrWithInfo);
 
     //cardWrapperColors
+    const buyButton = $(".card-wrapper__buy-button");
     $('.card-wrapper').hover(
         function() {
             $(this).find(".card-wrapper__buy-button").css({

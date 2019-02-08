@@ -185,10 +185,26 @@
 
 .photo-buttons-wrapper {
     position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
     &__first-button, &__second-button {
-        background: black;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        border: 2px solid @secondaryDarkColor;
+        border-radius: 50%;
+        margin-bottom: 6px;
+        &:hover {
+            background: @primaryColor;
+        }
+    }
+    &__first-button {
+        margin-right: 0.5rem;
+    }
+    .checked {
+        background-color: @secondaryColor;
     }
 
 }
