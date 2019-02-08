@@ -6,19 +6,11 @@ const MODULE_MARVEL = (function(){
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
-            "name":"Enjoy the journey of life...",
-            "info":"210х300 та 300х400 в рамці, під склом"
-        },
-        {
             "name":"My common sense is tingling...",
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
             "name":"I’m already a weapon...",
-            "info":"210х300 та 300х400 в рамці, під склом"
-        },
-        {
-            "name":"But Hulk like real fire...",
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
@@ -34,15 +26,7 @@ const MODULE_MARVEL = (function(){
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
-            "name":"What happened to your hair?",
-            "info":"210х300 та 300х400 в рамці, під склом"
-        },
-        {
             "name":"Man... legendary outlaw?",
-            "info":"210х300 та 300х400 в рамці, під склом"
-        },
-        {
-            "name":"We all have secrets...",
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
@@ -59,10 +43,6 @@ const MODULE_MARVEL = (function(){
         },
         {
             "name":"Where is Francis!?!",
-            "info":"210х300 та 300х400 в рамці, під склом"
-        },
-        {
-            "name":"Not a perfect soldier, but...",
             "info":"210х300 та 300х400 в рамці, під склом"
         },
         {
