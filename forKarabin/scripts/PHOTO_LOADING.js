@@ -7,7 +7,7 @@ const PHOTO_LOADING = function() {
             let infoInfo = props["info"];
             let ImagesrcForDC = `images/${whatCatalogue}/${count}.jpg`;
             let Photo = `
-                    <div class="padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="first-${whatCatalogue} padding-layout col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card-wrapper">
                         <div class="card-wrapper__photo-wrapper">
                             <img class="card-wrapper__photo" src="${ImagesrcForDC}" alt="">

@@ -134,21 +134,23 @@
         color: @primaryTextColor;
         text-align: center;
         margin-top: 1rem;
-    }
-    &__link {
-        font-size: 2.5rem;
-        text-decoration: none;
+        font-size: 2rem;
         color: @primaryTextColor;
         transition: 0.1s linear;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
         @media @medium-devices, @large-devices {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         @media @extra-large-devices {
-            font-size: 4rem;
+            font-size: 3.5rem;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
-    }
-    &__link:hover {
-        border-bottom: 3px solid @primaryTextColor;
+        &:hover {
+            border-bottom: 3px solid @secondaryDarkColor;
+        }
     }
     .close-button {
         position: absolute;
@@ -160,6 +162,9 @@
             cursor: pointer;
             font-size: 3rem;
             color: @primaryTextColor;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }
