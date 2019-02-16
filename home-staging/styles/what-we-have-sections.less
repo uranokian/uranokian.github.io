@@ -1,0 +1,95 @@
+@import "colors.less";
+
+.photo-block {
+    &__wrapper {
+        max-height: 100%;
+    }
+    &__photo {
+        max-width: 100%;
+        display: block;
+        max-height: 100%;
+    }
+}
+
+.info-block {
+    background: whitesmoke;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    &__wrapper {
+        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-top: 3px solid rgba(0, 0, 0, 0.11);
+        border-bottom: 3px solid rgba(0, 0, 0, 0.11);
+        border-radius: 2px;
+    }
+    &__title {
+        font-family: 'Marcellus SC', serif;
+        margin-bottom: 0.6rem;
+         font-size: 1.9rem;
+    }
+    &__price {
+        margin-bottom: 2rem;
+        color: @secondaryDarkColor;
+    }
+}
+
+
+//different-parts
+
+.different-parts {
+    .what-part {
+        padding: 0;
+        height: 50vh;
+        transition: 1s;
+        &:hover {
+            background-size: 105% 125%;
+        }
+
+    }
+    .what-part-1 {
+        background: url("../photos/back-4.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+    }
+    .what-part-2 {
+        background: url("../photos/back-5.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    .what-part-3 {
+        background: url("../photos/back-6.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+      
+    }
+    .what-part-4 {
+        background: url("../photos/back-3.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+    }
+    .what-part-5 {
+        background: url("../photos/header-background.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .what-part-6 {
+        background: url("../photos/header-background-2.jpg");
+        background-size: 100% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+    }
+    
+}
+
+
+

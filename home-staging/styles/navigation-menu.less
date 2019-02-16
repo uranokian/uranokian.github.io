@@ -13,8 +13,7 @@
  */
 
 .navigation {
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+     background-color: rgba(245, 245, 245, 0.712);
     padding: 2rem;
     padding-left: 3.2rem;
     padding-right: 3.2rem;
@@ -46,12 +45,16 @@
     }
     &__link {
         text-decoration: none;
-        color: @primaryTextColor;
+        color: black;
         transition: border-bottom 0.1s linear;
         &:hover {
             color: @secondaryTextColor;
         }
     }
+}
+
+.active-link {
+    border-bottom: 3px solid @secondaryLightColor;
 }
 
 .navigation-button {

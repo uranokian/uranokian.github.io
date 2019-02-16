@@ -9,8 +9,7 @@
 @secondaryTextColor:  gray;
  */
 .navigation {
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgba(245, 245, 245, 0.712);
   padding: 2rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
@@ -37,11 +36,14 @@
 }
 .navigation-links__link {
   text-decoration: none;
-  color: #000000;
+  color: black;
   transition: border-bottom 0.1s linear;
 }
 .navigation-links__link:hover {
   color: #808080;
+}
+.active-link {
+  border-bottom: 3px solid #ffbb93;
 }
 .navigation-button__button {
   font-family: 'Montserrat', sans-serif;
